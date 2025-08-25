@@ -103,8 +103,8 @@ class HideDataTwinSseArray2 extends NonGrowableListView<HideDataTwinSse> {
 // Rust type: RustOpaqueNom<Mutex < HideDataTwinSse >>
 abstract class MutexHideDataTwinSse implements RustOpaqueInterface {}
 
-// Rust type: RustOpaqueNom<RwLock < HideDataTwinSse >>
-abstract class RwLockHideDataTwinSse implements RustOpaqueInterface {}
+// Rust type: RustOpaqueNom<Mutex < HideDataTwinSse >>
+abstract class MutexHideDataTwinSse implements RustOpaqueInterface {}
 
 @freezed
 sealed class EnumOpaqueTwinSse with _$EnumOpaqueTwinSse {
@@ -122,9 +122,9 @@ sealed class EnumOpaqueTwinSse with _$EnumOpaqueTwinSse {
   const factory EnumOpaqueTwinSse.mutex(
     MutexHideDataTwinSse field0,
   ) = EnumOpaqueTwinSse_Mutex;
-  const factory EnumOpaqueTwinSse.rwLock(
-    RwLockHideDataTwinSse field0,
-  ) = EnumOpaqueTwinSse_RwLock;
+  const factory EnumOpaqueTwinSse.Mutex(
+    MutexHideDataTwinSse field0,
+  ) = EnumOpaqueTwinSse_Mutex;
   const factory EnumOpaqueTwinSse.nothing() = EnumOpaqueTwinSse_Nothing;
 }
 

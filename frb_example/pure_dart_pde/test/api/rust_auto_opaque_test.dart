@@ -109,7 +109,7 @@ Future<void> main({bool skipRustLibInit = false}) async {
         ]);
       });
 
-      // Not test yet, since this requires one function to acquire the Rust RwLock
+      // Not test yet, since this requires one function to acquire the Rust Mutex
       // before the other releases it, thus require some timing.
       //
       // test('cannot call multiple `T` concurrently', () async {

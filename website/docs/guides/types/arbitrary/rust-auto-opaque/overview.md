@@ -5,8 +5,8 @@ allows arbitrary Rust type to be used without manual intervention,
 by representing arbitrary Rust object as (smart) pointers in Dart.
 
 Different from non-opaque types, opaque types are not copied/moved/reconstructed at all.
-For example, if you pass around `RwLock<Mutex<ArbitraryData>` in arguments and return values,
-you will get the exact *same* `RwLock<ArbitraryData>` object.
+For example, if you pass around `Mutex<Mutex<ArbitraryData>` in arguments and return values,
+you will get the exact *same* `Mutex<ArbitraryData>` object.
 
 ## Example
 

@@ -1,7 +1,7 @@
 # `RustAutoOpaque` struct
 
 Sometimes you may want to directly work with the `RustAutoOpaque<T>` struct.
-It is currently implemented as (roughly) an `Arc<RwLock<T>>`.
+It is currently implemented as (roughly) an `Arc<Mutex<T>>`.
 The main API is quite simple:
 
 ```rust
@@ -18,6 +18,6 @@ There are several variants for reading and writing:
 * `read`, `write`
 * `blocking_read`, `blocking_write`
 
-which mimics [tokio's RwLock](https://docs.rs/tokio/latest/tokio/sync/struct.RwLock.html) semantics.
+which mimics [tokio's Mutex](https://docs.rs/tokio/latest/tokio/sync/struct.Mutex.html) semantics.
 
 There needs to be a lock, because the object can be used by multiple Rust threads concurrently.

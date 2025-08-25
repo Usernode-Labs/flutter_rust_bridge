@@ -10,7 +10,7 @@ use anyhow::Result;
 use flutter_rust_bridge::{opaque_dyn, RustOpaqueNom};
 use std::fmt::Debug;
 use std::ops::Deref;
-pub use std::sync::{Mutex, RwLock};
+pub use std::sync::{Mutex, Mutex};
 
 pub struct HideDataTwinNormal(pub HideDataRaw);
 pub struct NonCloneDataTwinNormal(pub NonCloneDataRaw);
@@ -29,7 +29,7 @@ pub enum EnumOpaqueTwinNormal {
     Primitive(RustOpaque<i32>),
     TraitObj(RustOpaque<Box<dyn DartDebugTwinNormal>>),
     Mutex(RustOpaque<Mutex<HideDataTwinNormal>>),
-    RwLock(RustOpaque<RwLock<HideDataTwinNormal>>),
+    Mutex(RustOpaque<Mutex<HideDataTwinNormal>>),
     Nothing,
 }
 
@@ -63,7 +63,7 @@ pub fn create_array_opaque_enum_twin_normal() -> [EnumOpaqueTwinNormal; 5] {
         EnumOpaqueTwinNormal::Mutex(RustOpaque::new(Mutex::new(HideDataTwinNormal(
             HideDataRaw::new(),
         )))),
-        EnumOpaqueTwinNormal::RwLock(RustOpaque::new(RwLock::new(HideDataTwinNormal(
+        EnumOpaqueTwinNormal::Mutex(RustOpaque::new(Mutex::new(HideDataTwinNormal(
             HideDataRaw::new(),
         )))),
     ]
@@ -77,7 +77,7 @@ pub fn run_enum_opaque_twin_normal(opaque: EnumOpaqueTwinNormal) -> String {
         EnumOpaqueTwinNormal::Mutex(m) => {
             format!("{:?}", m.lock().unwrap().0.hide_data())
         }
-        EnumOpaqueTwinNormal::RwLock(r) => {
+        EnumOpaqueTwinNormal::Mutex(r) => {
             format!("{:?}", r.read().unwrap().0.hide_data())
         }
         _ => "nothing".to_owned(),

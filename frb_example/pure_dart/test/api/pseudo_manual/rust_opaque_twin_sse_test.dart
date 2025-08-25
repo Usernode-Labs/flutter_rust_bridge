@@ -151,7 +151,7 @@ Future<void> main({bool skipRustLibInit = false}) async {
         "array: [451, 451, 451, 451, 451, 451, 451, 451, 451, 451], "
         "lifetime: \\\"static str\\\" "
         "})\"");
-    (data[4] as EnumOpaqueTwinSse_RwLock).field0.dispose();
+    (data[4] as EnumOpaqueTwinSse_Mutex).field0.dispose();
     await expectLater(() => runEnumOpaqueTwinSse(opaque: data[4]),
         throwsA(isA<DroppableDisposedException>()));
   });

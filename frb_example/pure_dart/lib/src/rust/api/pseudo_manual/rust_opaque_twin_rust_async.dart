@@ -123,8 +123,8 @@ abstract class MutexHideDataTwinRustAsync implements RustOpaqueInterface {}
 // Rust type: RustOpaqueNom<NonCloneDataTwinRustAsync>
 abstract class NonCloneDataTwinRustAsync implements RustOpaqueInterface {}
 
-// Rust type: RustOpaqueNom<RwLock < HideDataTwinRustAsync >>
-abstract class RwLockHideDataTwinRustAsync implements RustOpaqueInterface {}
+// Rust type: RustOpaqueNom<Mutex < HideDataTwinRustAsync >>
+abstract class MutexHideDataTwinRustAsync implements RustOpaqueInterface {}
 
 // Rust type: RustOpaqueNom<i32>
 abstract class I32 implements RustOpaqueInterface {}
@@ -145,9 +145,9 @@ sealed class EnumOpaqueTwinRustAsync with _$EnumOpaqueTwinRustAsync {
   const factory EnumOpaqueTwinRustAsync.mutex(
     MutexHideDataTwinRustAsync field0,
   ) = EnumOpaqueTwinRustAsync_Mutex;
-  const factory EnumOpaqueTwinRustAsync.rwLock(
-    RwLockHideDataTwinRustAsync field0,
-  ) = EnumOpaqueTwinRustAsync_RwLock;
+  const factory EnumOpaqueTwinRustAsync.Mutex(
+    MutexHideDataTwinRustAsync field0,
+  ) = EnumOpaqueTwinRustAsync_Mutex;
   const factory EnumOpaqueTwinRustAsync.nothing() =
       EnumOpaqueTwinRustAsync_Nothing;
 }

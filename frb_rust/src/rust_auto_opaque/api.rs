@@ -1,39 +1,39 @@
 use crate::generalized_arc::base_arc::BaseArc;
-use crate::rust_async::{RwLockReadGuard, RwLockWriteGuard};
+use crate::rust_async::{MutexGuard};
 use crate::rust_auto_opaque::inner::RustAutoOpaqueInner;
 use crate::rust_auto_opaque::RustAutoOpaqueBase;
 use crate::rust_opaque::RustOpaqueBase;
-use tokio::sync::{RwLock, TryLockError};
+use tokio::sync::{Mutex, TryLockError};
 
 impl<T, A: BaseArc<RustAutoOpaqueInner<T>>> RustAutoOpaqueBase<T, A> {
     pub fn new(value: T) -> Self {
-        Self(RustOpaqueBase::new(RustAutoOpaqueInner::new(RwLock::new(
+        Self(RustOpaqueBase::new(RustAutoOpaqueInner::new(Mutex::new(
             value,
         ))))
     }
 
-    pub fn blocking_read(&self) -> RwLockReadGuard<'_, T> {
-        self.0.data.blocking_read()
+    pub fn blocking_read(&self) -> MutexGuard<'_, T> {
+        self.0.data.blocking_lock()
     }
 
-    pub fn blocking_write(&self) -> RwLockWriteGuard<'_, T> {
-        self.0.data.blocking_write()
+    pub fn blocking_write(&self) -> MutexGuard<'_, T> {
+        self.0.data.blocking_lock()
     }
 
-    pub async fn read(&self) -> RwLockReadGuard<'_, T> {
-        self.0.data.read().await
+    pub async fn read(&self) -> MutexGuard<'_, T> {
+        self.0.data.lock().await
     }
 
-    pub async fn write(&self) -> RwLockWriteGuard<'_, T> {
-        self.0.data.write().await
+    pub async fn write(&self) -> MutexGuard<'_, T> {
+        self.0.data.lock().await
     }
 
-    pub fn try_read(&self) -> Result<RwLockReadGuard<'_, T>, TryLockError> {
-        self.0.data.try_read()
+    pub fn try_read(&self) -> Result<MutexGuard<'_, T>, TryLockError> {
+        self.0.data.try_lock()
     }
 
-    pub fn try_write(&self) -> Result<RwLockWriteGuard<'_, T>, TryLockError> {
-        self.0.data.try_write()
+    pub fn try_write(&self) -> Result<MutexGuard<'_, T>, TryLockError> {
+        self.0.data.try_lock()
     }
 }
 

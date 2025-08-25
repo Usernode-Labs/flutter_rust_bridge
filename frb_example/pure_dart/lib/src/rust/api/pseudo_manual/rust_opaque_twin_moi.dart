@@ -102,8 +102,8 @@ class HideDataTwinMoiArray2 extends NonGrowableListView<HideDataTwinMoi> {
 // Rust type: RustOpaqueMoi<Mutex < HideDataTwinMoi >>
 abstract class MutexHideDataTwinMoi implements RustOpaqueInterface {}
 
-// Rust type: RustOpaqueMoi<RwLock < HideDataTwinMoi >>
-abstract class RwLockHideDataTwinMoi implements RustOpaqueInterface {}
+// Rust type: RustOpaqueMoi<Mutex < HideDataTwinMoi >>
+abstract class MutexHideDataTwinMoi implements RustOpaqueInterface {}
 
 // Rust type: RustOpaqueMoi<i16>
 abstract class I16 implements RustOpaqueInterface {}
@@ -124,9 +124,9 @@ sealed class EnumOpaqueTwinMoi with _$EnumOpaqueTwinMoi {
   const factory EnumOpaqueTwinMoi.mutex(
     MutexHideDataTwinMoi field0,
   ) = EnumOpaqueTwinMoi_Mutex;
-  const factory EnumOpaqueTwinMoi.rwLock(
-    RwLockHideDataTwinMoi field0,
-  ) = EnumOpaqueTwinMoi_RwLock;
+  const factory EnumOpaqueTwinMoi.Mutex(
+    MutexHideDataTwinMoi field0,
+  ) = EnumOpaqueTwinMoi_Mutex;
   const factory EnumOpaqueTwinMoi.nothing() = EnumOpaqueTwinMoi_Nothing;
 }
 

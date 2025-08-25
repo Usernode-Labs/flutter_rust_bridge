@@ -153,7 +153,7 @@ Future<void> main({bool skipRustLibInit = false}) async {
         "array: [451, 451, 451, 451, 451, 451, 451, 451, 451, 451], "
         "lifetime: \\\"static str\\\" "
         "})\"");
-    (data[4] as EnumOpaqueTwinRustAsync_RwLock).field0.dispose();
+    (data[4] as EnumOpaqueTwinRustAsync_Mutex).field0.dispose();
     await expectLater(() => runEnumOpaqueTwinRustAsync(opaque: data[4]),
         throwsA(isA<DroppableDisposedException>()));
   });

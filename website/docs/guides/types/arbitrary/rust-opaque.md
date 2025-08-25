@@ -12,7 +12,7 @@ Rust:
 ```rust
 struct ArbitraryData { ... }
 pub fn use_opaque(a: RustOpaque<ArbitraryData>) { ... }
-pub fn even_use_locks(b: RustOpaque<Mutex<ArbitraryData>) -> RustOpaque<RwLock<ArbitraryData>> { ... }
+pub fn even_use_locks(b: RustOpaque<Mutex<ArbitraryData>) -> RustOpaque<Mutex<ArbitraryData>> { ... }
 enum AnEnumContainingOpaque { Hello(RustOpaque<ArbitraryData>), World(i32) }
 ...
 ```

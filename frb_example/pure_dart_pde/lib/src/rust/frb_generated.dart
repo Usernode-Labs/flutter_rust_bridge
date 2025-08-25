@@ -4845,31 +4845,31 @@ abstract class RustLibApi extends BaseApi {
       get rust_arc_decrement_strong_count_NonCloneDataTwinSyncPtr;
 
   RustArcIncrementStrongCountFnType
-      get rust_arc_increment_strong_count_RwLockHideDataTwinNormal;
+      get rust_arc_increment_strong_count_MutexHideDataTwinNormal;
 
   RustArcDecrementStrongCountFnType
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinNormal;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinNormal;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinNormalPtr;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinNormalPtr;
 
   RustArcIncrementStrongCountFnType
-      get rust_arc_increment_strong_count_RwLockHideDataTwinRustAsync;
+      get rust_arc_increment_strong_count_MutexHideDataTwinRustAsync;
 
   RustArcDecrementStrongCountFnType
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinRustAsync;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinRustAsync;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinRustAsyncPtr;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinRustAsyncPtr;
 
   RustArcIncrementStrongCountFnType
-      get rust_arc_increment_strong_count_RwLockHideDataTwinSync;
+      get rust_arc_increment_strong_count_MutexHideDataTwinSync;
 
   RustArcDecrementStrongCountFnType
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinSync;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinSync;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinSyncPtr;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinSyncPtr;
 
   RustArcIncrementStrongCountFnType
       get rust_arc_increment_strong_count_BoxAnyMyDartTypeRename;
@@ -42545,28 +42545,28 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
           wire.rust_arc_decrement_strong_count_RustOpaque_NonCloneDataTwinSync;
 
   RustArcIncrementStrongCountFnType
-      get rust_arc_increment_strong_count_RwLockHideDataTwinNormal => wire
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinNormal;
+      get rust_arc_increment_strong_count_MutexHideDataTwinNormal => wire
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinNormal;
 
   RustArcDecrementStrongCountFnType
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinNormal => wire
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinNormal;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinNormal => wire
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinNormal;
 
   RustArcIncrementStrongCountFnType
-      get rust_arc_increment_strong_count_RwLockHideDataTwinRustAsync => wire
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsync;
+      get rust_arc_increment_strong_count_MutexHideDataTwinRustAsync => wire
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsync;
 
   RustArcDecrementStrongCountFnType
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinRustAsync => wire
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsync;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinRustAsync => wire
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsync;
 
   RustArcIncrementStrongCountFnType
-      get rust_arc_increment_strong_count_RwLockHideDataTwinSync => wire
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSync;
+      get rust_arc_increment_strong_count_MutexHideDataTwinSync => wire
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSync;
 
   RustArcDecrementStrongCountFnType
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinSync => wire
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSync;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinSync => wire
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSync;
 
   RustArcIncrementStrongCountFnType
       get rust_arc_increment_strong_count_BoxAnyMyDartTypeRename => wire
@@ -45157,26 +45157,26 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
   }
 
   @protected
-  RwLockHideDataTwinNormal dco_decode_RustOpaque_RwLockHideDataTwinNormal(
+  MutexHideDataTwinNormal dco_decode_RustOpaque_MutexHideDataTwinNormal(
       dynamic raw) {
     // Codec=Dco (DartCObject based), see doc to use other codecs
-    return RwLockHideDataTwinNormalImpl.frbInternalDcoDecode(
+    return MutexHideDataTwinNormalImpl.frbInternalDcoDecode(
         raw as List<dynamic>);
   }
 
   @protected
-  RwLockHideDataTwinRustAsync dco_decode_RustOpaque_RwLockHideDataTwinRustAsync(
+  MutexHideDataTwinRustAsync dco_decode_RustOpaque_MutexHideDataTwinRustAsync(
       dynamic raw) {
     // Codec=Dco (DartCObject based), see doc to use other codecs
-    return RwLockHideDataTwinRustAsyncImpl.frbInternalDcoDecode(
+    return MutexHideDataTwinRustAsyncImpl.frbInternalDcoDecode(
         raw as List<dynamic>);
   }
 
   @protected
-  RwLockHideDataTwinSync dco_decode_RustOpaque_RwLockHideDataTwinSync(
+  MutexHideDataTwinSync dco_decode_RustOpaque_MutexHideDataTwinSync(
       dynamic raw) {
     // Codec=Dco (DartCObject based), see doc to use other codecs
-    return RwLockHideDataTwinSyncImpl.frbInternalDcoDecode(
+    return MutexHideDataTwinSyncImpl.frbInternalDcoDecode(
         raw as List<dynamic>);
   }
 
@@ -49352,8 +49352,8 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
           dco_decode_RustOpaque_MutexHideDataTwinNormal(raw[1]),
         );
       case 4:
-        return EnumOpaqueTwinNormal_RwLock(
-          dco_decode_RustOpaque_RwLockHideDataTwinNormal(raw[1]),
+        return EnumOpaqueTwinNormal_Mutex(
+          dco_decode_RustOpaque_MutexHideDataTwinNormal(raw[1]),
         );
       case 5:
         return EnumOpaqueTwinNormal_Nothing();
@@ -49392,8 +49392,8 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
           dco_decode_RustOpaque_MutexHideDataTwinRustAsync(raw[1]),
         );
       case 4:
-        return EnumOpaqueTwinRustAsync_RwLock(
-          dco_decode_RustOpaque_RwLockHideDataTwinRustAsync(raw[1]),
+        return EnumOpaqueTwinRustAsync_Mutex(
+          dco_decode_RustOpaque_MutexHideDataTwinRustAsync(raw[1]),
         );
       case 5:
         return EnumOpaqueTwinRustAsync_Nothing();
@@ -49432,8 +49432,8 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
           dco_decode_RustOpaque_MutexHideDataTwinSync(raw[1]),
         );
       case 4:
-        return EnumOpaqueTwinSync_RwLock(
-          dco_decode_RustOpaque_RwLockHideDataTwinSync(raw[1]),
+        return EnumOpaqueTwinSync_Mutex(
+          dco_decode_RustOpaque_MutexHideDataTwinSync(raw[1]),
         );
       case 5:
         return EnumOpaqueTwinSync_Nothing();
@@ -56536,26 +56536,26 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
   }
 
   @protected
-  RwLockHideDataTwinNormal sse_decode_RustOpaque_RwLockHideDataTwinNormal(
+  MutexHideDataTwinNormal sse_decode_RustOpaque_MutexHideDataTwinNormal(
       SseDeserializer deserializer) {
     // Codec=Sse (Serialization based), see doc to use other codecs
-    return RwLockHideDataTwinNormalImpl.frbInternalSseDecode(
+    return MutexHideDataTwinNormalImpl.frbInternalSseDecode(
         sse_decode_usize(deserializer), sse_decode_i_32(deserializer));
   }
 
   @protected
-  RwLockHideDataTwinRustAsync sse_decode_RustOpaque_RwLockHideDataTwinRustAsync(
+  MutexHideDataTwinRustAsync sse_decode_RustOpaque_MutexHideDataTwinRustAsync(
       SseDeserializer deserializer) {
     // Codec=Sse (Serialization based), see doc to use other codecs
-    return RwLockHideDataTwinRustAsyncImpl.frbInternalSseDecode(
+    return MutexHideDataTwinRustAsyncImpl.frbInternalSseDecode(
         sse_decode_usize(deserializer), sse_decode_i_32(deserializer));
   }
 
   @protected
-  RwLockHideDataTwinSync sse_decode_RustOpaque_RwLockHideDataTwinSync(
+  MutexHideDataTwinSync sse_decode_RustOpaque_MutexHideDataTwinSync(
       SseDeserializer deserializer) {
     // Codec=Sse (Serialization based), see doc to use other codecs
-    return RwLockHideDataTwinSyncImpl.frbInternalSseDecode(
+    return MutexHideDataTwinSyncImpl.frbInternalSseDecode(
         sse_decode_usize(deserializer), sse_decode_i_32(deserializer));
   }
 
@@ -60725,8 +60725,8 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
         return EnumOpaqueTwinNormal_Mutex(var_field0);
       case 4:
         var var_field0 =
-            sse_decode_RustOpaque_RwLockHideDataTwinNormal(deserializer);
-        return EnumOpaqueTwinNormal_RwLock(var_field0);
+            sse_decode_RustOpaque_MutexHideDataTwinNormal(deserializer);
+        return EnumOpaqueTwinNormal_Mutex(var_field0);
       case 5:
         return EnumOpaqueTwinNormal_Nothing();
       default:
@@ -60766,8 +60766,8 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
         return EnumOpaqueTwinRustAsync_Mutex(var_field0);
       case 4:
         var var_field0 =
-            sse_decode_RustOpaque_RwLockHideDataTwinRustAsync(deserializer);
-        return EnumOpaqueTwinRustAsync_RwLock(var_field0);
+            sse_decode_RustOpaque_MutexHideDataTwinRustAsync(deserializer);
+        return EnumOpaqueTwinRustAsync_Mutex(var_field0);
       case 5:
         return EnumOpaqueTwinRustAsync_Nothing();
       default:
@@ -60806,8 +60806,8 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
         return EnumOpaqueTwinSync_Mutex(var_field0);
       case 4:
         var var_field0 =
-            sse_decode_RustOpaque_RwLockHideDataTwinSync(deserializer);
-        return EnumOpaqueTwinSync_RwLock(var_field0);
+            sse_decode_RustOpaque_MutexHideDataTwinSync(deserializer);
+        return EnumOpaqueTwinSync_Mutex(var_field0);
       case 5:
         return EnumOpaqueTwinSync_Nothing();
       default:
@@ -68726,30 +68726,30 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
   }
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinNormal(
-      RwLockHideDataTwinNormal self, SseSerializer serializer) {
+  void sse_encode_RustOpaque_MutexHideDataTwinNormal(
+      MutexHideDataTwinNormal self, SseSerializer serializer) {
     // Codec=Sse (Serialization based), see doc to use other codecs
     sse_encode_usize(
-        (self as RwLockHideDataTwinNormalImpl).frbInternalSseEncode(move: null),
+        (self as MutexHideDataTwinNormalImpl).frbInternalSseEncode(move: null),
         serializer);
   }
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinRustAsync(
-      RwLockHideDataTwinRustAsync self, SseSerializer serializer) {
+  void sse_encode_RustOpaque_MutexHideDataTwinRustAsync(
+      MutexHideDataTwinRustAsync self, SseSerializer serializer) {
     // Codec=Sse (Serialization based), see doc to use other codecs
     sse_encode_usize(
-        (self as RwLockHideDataTwinRustAsyncImpl)
+        (self as MutexHideDataTwinRustAsyncImpl)
             .frbInternalSseEncode(move: null),
         serializer);
   }
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinSync(
-      RwLockHideDataTwinSync self, SseSerializer serializer) {
+  void sse_encode_RustOpaque_MutexHideDataTwinSync(
+      MutexHideDataTwinSync self, SseSerializer serializer) {
     // Codec=Sse (Serialization based), see doc to use other codecs
     sse_encode_usize(
-        (self as RwLockHideDataTwinSyncImpl).frbInternalSseEncode(move: null),
+        (self as MutexHideDataTwinSyncImpl).frbInternalSseEncode(move: null),
         serializer);
   }
 
@@ -72877,9 +72877,9 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
       case EnumOpaqueTwinNormal_Mutex(field0: final field0):
         sse_encode_i_32(3, serializer);
         sse_encode_RustOpaque_MutexHideDataTwinNormal(field0, serializer);
-      case EnumOpaqueTwinNormal_RwLock(field0: final field0):
+      case EnumOpaqueTwinNormal_Mutex(field0: final field0):
         sse_encode_i_32(4, serializer);
-        sse_encode_RustOpaque_RwLockHideDataTwinNormal(field0, serializer);
+        sse_encode_RustOpaque_MutexHideDataTwinNormal(field0, serializer);
       case EnumOpaqueTwinNormal_Nothing():
         sse_encode_i_32(5, serializer);
     }
@@ -72909,9 +72909,9 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
       case EnumOpaqueTwinRustAsync_Mutex(field0: final field0):
         sse_encode_i_32(3, serializer);
         sse_encode_RustOpaque_MutexHideDataTwinRustAsync(field0, serializer);
-      case EnumOpaqueTwinRustAsync_RwLock(field0: final field0):
+      case EnumOpaqueTwinRustAsync_Mutex(field0: final field0):
         sse_encode_i_32(4, serializer);
-        sse_encode_RustOpaque_RwLockHideDataTwinRustAsync(field0, serializer);
+        sse_encode_RustOpaque_MutexHideDataTwinRustAsync(field0, serializer);
       case EnumOpaqueTwinRustAsync_Nothing():
         sse_encode_i_32(5, serializer);
     }
@@ -72941,9 +72941,9 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
       case EnumOpaqueTwinSync_Mutex(field0: final field0):
         sse_encode_i_32(3, serializer);
         sse_encode_RustOpaque_MutexHideDataTwinSync(field0, serializer);
-      case EnumOpaqueTwinSync_RwLock(field0: final field0):
+      case EnumOpaqueTwinSync_Mutex(field0: final field0):
         sse_encode_i_32(4, serializer);
-        sse_encode_RustOpaque_RwLockHideDataTwinSync(field0, serializer);
+        sse_encode_RustOpaque_MutexHideDataTwinSync(field0, serializer);
       case EnumOpaqueTwinSync_Nothing():
         sse_encode_i_32(5, serializer);
     }
@@ -79379,68 +79379,68 @@ class OpaqueTwoTwinSyncImpl extends RustOpaque implements OpaqueTwoTwinSync {
 }
 
 @sealed
-class RwLockHideDataTwinNormalImpl extends RustOpaque
-    implements RwLockHideDataTwinNormal {
+class MutexHideDataTwinNormalImpl extends RustOpaque
+    implements MutexHideDataTwinNormal {
   // Not to be used by end users
-  RwLockHideDataTwinNormalImpl.frbInternalDcoDecode(List<dynamic> wire)
+  MutexHideDataTwinNormalImpl.frbInternalDcoDecode(List<dynamic> wire)
       : super.frbInternalDcoDecode(wire, _kStaticData);
 
   // Not to be used by end users
-  RwLockHideDataTwinNormalImpl.frbInternalSseDecode(
+  MutexHideDataTwinNormalImpl.frbInternalSseDecode(
       BigInt ptr, int externalSizeOnNative)
       : super.frbInternalSseDecode(ptr, externalSizeOnNative, _kStaticData);
 
   static final _kStaticData = RustArcStaticData(
     rustArcIncrementStrongCount: RustLib
-        .instance.api.rust_arc_increment_strong_count_RwLockHideDataTwinNormal,
+        .instance.api.rust_arc_increment_strong_count_MutexHideDataTwinNormal,
     rustArcDecrementStrongCount: RustLib
-        .instance.api.rust_arc_decrement_strong_count_RwLockHideDataTwinNormal,
+        .instance.api.rust_arc_decrement_strong_count_MutexHideDataTwinNormal,
     rustArcDecrementStrongCountPtr: RustLib.instance.api
-        .rust_arc_decrement_strong_count_RwLockHideDataTwinNormalPtr,
+        .rust_arc_decrement_strong_count_MutexHideDataTwinNormalPtr,
   );
 }
 
 @sealed
-class RwLockHideDataTwinRustAsyncImpl extends RustOpaque
-    implements RwLockHideDataTwinRustAsync {
+class MutexHideDataTwinRustAsyncImpl extends RustOpaque
+    implements MutexHideDataTwinRustAsync {
   // Not to be used by end users
-  RwLockHideDataTwinRustAsyncImpl.frbInternalDcoDecode(List<dynamic> wire)
+  MutexHideDataTwinRustAsyncImpl.frbInternalDcoDecode(List<dynamic> wire)
       : super.frbInternalDcoDecode(wire, _kStaticData);
 
   // Not to be used by end users
-  RwLockHideDataTwinRustAsyncImpl.frbInternalSseDecode(
+  MutexHideDataTwinRustAsyncImpl.frbInternalSseDecode(
       BigInt ptr, int externalSizeOnNative)
       : super.frbInternalSseDecode(ptr, externalSizeOnNative, _kStaticData);
 
   static final _kStaticData = RustArcStaticData(
     rustArcIncrementStrongCount: RustLib.instance.api
-        .rust_arc_increment_strong_count_RwLockHideDataTwinRustAsync,
+        .rust_arc_increment_strong_count_MutexHideDataTwinRustAsync,
     rustArcDecrementStrongCount: RustLib.instance.api
-        .rust_arc_decrement_strong_count_RwLockHideDataTwinRustAsync,
+        .rust_arc_decrement_strong_count_MutexHideDataTwinRustAsync,
     rustArcDecrementStrongCountPtr: RustLib.instance.api
-        .rust_arc_decrement_strong_count_RwLockHideDataTwinRustAsyncPtr,
+        .rust_arc_decrement_strong_count_MutexHideDataTwinRustAsyncPtr,
   );
 }
 
 @sealed
-class RwLockHideDataTwinSyncImpl extends RustOpaque
-    implements RwLockHideDataTwinSync {
+class MutexHideDataTwinSyncImpl extends RustOpaque
+    implements MutexHideDataTwinSync {
   // Not to be used by end users
-  RwLockHideDataTwinSyncImpl.frbInternalDcoDecode(List<dynamic> wire)
+  MutexHideDataTwinSyncImpl.frbInternalDcoDecode(List<dynamic> wire)
       : super.frbInternalDcoDecode(wire, _kStaticData);
 
   // Not to be used by end users
-  RwLockHideDataTwinSyncImpl.frbInternalSseDecode(
+  MutexHideDataTwinSyncImpl.frbInternalSseDecode(
       BigInt ptr, int externalSizeOnNative)
       : super.frbInternalSseDecode(ptr, externalSizeOnNative, _kStaticData);
 
   static final _kStaticData = RustArcStaticData(
     rustArcIncrementStrongCount: RustLib
-        .instance.api.rust_arc_increment_strong_count_RwLockHideDataTwinSync,
+        .instance.api.rust_arc_increment_strong_count_MutexHideDataTwinSync,
     rustArcDecrementStrongCount: RustLib
-        .instance.api.rust_arc_decrement_strong_count_RwLockHideDataTwinSync,
+        .instance.api.rust_arc_decrement_strong_count_MutexHideDataTwinSync,
     rustArcDecrementStrongCountPtr: RustLib
-        .instance.api.rust_arc_decrement_strong_count_RwLockHideDataTwinSyncPtr,
+        .instance.api.rust_arc_decrement_strong_count_MutexHideDataTwinSyncPtr,
   );
 }
 

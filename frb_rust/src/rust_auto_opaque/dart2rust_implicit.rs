@@ -1,7 +1,7 @@
 use crate::for_generated::{BaseArc, Lockable, LockableOrder, RustAutoOpaqueBase};
 use crate::rust_auto_opaque::inner::RustAutoOpaqueInner;
 use crate::rust_opaque::RustOpaqueBase;
-use tokio::sync::RwLock;
+use tokio::sync::Mutex;
 
 // NOTE: Make these functions instead of methods, thus we can control its visibility by exporting
 // only through `for_generated::...` and do not expose to end users.
@@ -21,7 +21,7 @@ pub fn rust_auto_opaque_decode_owned<T, A: BaseArc<RustAutoOpaqueInner<T>>>(
 pub fn rust_auto_opaque_encode<T, A: BaseArc<RustAutoOpaqueInner<T>>>(
     value: T,
 ) -> RustOpaqueBase<RustAutoOpaqueInner<T>, A> {
-    RustOpaqueBase::new(RustAutoOpaqueInner::new(RwLock::new(value)))
+    RustOpaqueBase::new(RustAutoOpaqueInner::new(Mutex::new(value)))
 }
 
 pub fn rust_auto_opaque_lockable_order<T: Send + Sync, A: BaseArc<RustAutoOpaqueInner<T>>>(

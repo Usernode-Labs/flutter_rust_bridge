@@ -121,7 +121,7 @@ fn serialize_vec_syn<T: ToTokens, S: Serializer>(values: &[T], s: S) -> Result<S
 fn rust_type_to_sanitized_type(raw: &str, brief_name: bool) -> String {
     lazy_static! {
         static ref OPAQUE_FILTER: Regex = Regex::new(r"((\bdyn|'static|\bDartSafe|\bRustAutoOpaqueInner|\bAssertUnwindSafe|\+ (Send|Sync|UnwindSafe|RefUnwindSafe))\b)|([a-zA-Z0-9_ ]+::)").unwrap();
-        static ref OPAQUE_BRIEF_NAME_FILTER: Regex = Regex::new(r"(\bRwLock)\b").unwrap();
+        static ref OPAQUE_BRIEF_NAME_FILTER: Regex = Regex::new(r"(\bMutex)\b").unwrap();
     }
 
     let mut ans = raw.to_owned();
@@ -151,11 +151,11 @@ mod tests {
         assert_eq!(&rust_type_to_sanitized_type("SomeType", true), "SomeType");
         assert_eq!(
             &rust_type_to_sanitized_type(
-                "flutter_rust_bridge::for_generated::rust_async::RwLock<crate::api::simple::AnotherOpaqueType>",
+                "flutter_rust_bridge::for_generated::rust_async::Mutex<crate::api::simple::AnotherOpaqueType>",
                 true
             ),
             "AnotherOpaqueType"
         );
-        assert_eq!(&rust_type_to_sanitized_type("flutter_rust_bridge::for_generated::rust_async::RwLock<(crate::api::simple::MyOpaqueType,crate::api::simple::AnotherOpaqueType,)>", true), "MyOpaqueTypeAnotherOpaqueType");
+        assert_eq!(&rust_type_to_sanitized_type("flutter_rust_bridge::for_generated::rust_async::Mutex<(crate::api::simple::MyOpaqueType,crate::api::simple::AnotherOpaqueType,)>", true), "MyOpaqueTypeAnotherOpaqueType");
     }
 }

@@ -65,14 +65,14 @@ fn generate_code_lockable_impl(
 ) -> String {
     let blocking_read_body = generate_match_raw(variants, |variant| {
         format!(
-            "{enum_name}RwLockReadGuard::{}(inner.blocking_read())",
+            "{enum_name}MutexGuard::{}(inner.blocking_lock())",
             variant.enum_variant_name
         )
     });
     let blocking_write_body = if support_mut {
         generate_match_raw(variants, |variant| {
             format!(
-                "{enum_name}RwLockWriteGuard::{}(inner.blocking_write())",
+                "{enum_name}MutexGuard::{}(inner.blocking_lock())",
                 variant.enum_variant_name
             )
         })
@@ -82,14 +82,14 @@ fn generate_code_lockable_impl(
 
     let read_body = generate_match_raw(variants, |variant| {
         format!(
-            "{enum_name}RwLockReadGuard::{}(inner.read().await)",
+            "{enum_name}MutexGuard::{}(inner.lock().await)",
             variant.enum_variant_name
         )
     });
     let write_body = if support_mut {
         generate_match_raw(variants, |variant| {
             format!(
-                "{enum_name}RwLockWriteGuard::{}(inner.write().await)",
+                "{enum_name}MutexGuard::{}(inner.lock().await)",
                 variant.enum_variant_name
             )
         })
@@ -104,42 +104,41 @@ fn generate_code_lockable_impl(
     format!(
         "
         impl {enum_name} {{
-            pub fn blocking_read(&self) -> {enum_name}RwLockReadGuard {{
+            pub fn blocking_read(&self) -> {enum_name}MutexGuard {{
                 {blocking_read_body}
             }}
 
-            pub fn blocking_write(&self) -> {enum_name}RwLockWriteGuard {{
+            pub fn blocking_write(&self) -> {enum_name}MutexGuard {{
                 {blocking_write_body}
             }}
 
-            pub async fn read(&self) -> {enum_name}RwLockReadGuard {{
+            pub async fn read(&self) -> {enum_name}MutexGuard {{
                 {read_body}
             }}
 
-            pub async fn write(&self) -> {enum_name}RwLockWriteGuard {{
+            pub async fn write(&self) -> {enum_name}MutexGuard {{
                 {write_body}
             }}
         }}
 
         impl Lockable for {enum_name} {{
-            type RwLockReadGuard<'a> = {enum_name}RwLockReadGuard<'a>;
-            type RwLockWriteGuard<'a> = {enum_name}RwLockWriteGuard<'a>;
+            type MutexGuard<'a> = {enum_name}MutexGuard<'a>;
 
             fn lockable_order(&self) -> flutter_rust_bridge::for_generated::LockableOrder {{
                 {lockable_order_body}
             }}
 
-            fn lockable_decode_sync_ref(&self) -> Self::RwLockReadGuard<'_> {{
+            fn lockable_decode_sync_ref(&self) -> Self::MutexGuard<'_> {{
                 self.blocking_read()
             }}
 
-            fn lockable_decode_sync_ref_mut(&self) -> Self::RwLockWriteGuard<'_> {{
+            fn lockable_decode_sync_ref_mut(&self) -> Self::MutexGuard<'_> {{
                 self.blocking_write()
             }}
 
             fn lockable_decode_async_ref<'a>(
                 &'a self,
-            ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::RwLockReadGuard<'a>> + Send + 'a>>
+            ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::MutexGuard<'a>> + Send + 'a>>
             where
                 Self: Sync + 'a,
             {{
@@ -148,7 +147,7 @@ fn generate_code_lockable_impl(
 
             fn lockable_decode_async_ref_mut<'a>(
                 &'a self,
-            ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::RwLockWriteGuard<'a>> + Send + 'a>>
+            ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::MutexGuard<'a>> + Send + 'a>>
             where
                 Self: Sync + 'a,
             {{
@@ -174,10 +173,10 @@ fn generate_code_read_write_guard(
 ) -> String {
     let rw_pascal = rw.to_string().to_case(Case::Pascal);
 
-    let enum_name = format!("{enum_name}RwLock{rw_pascal}Guard");
+    let enum_name = format!("{enum_name}Mutex{rw_pascal}Guard");
     let enum_def = generate_enum_raw(variants, &format!("{enum_name}<'a>"), |variant| {
         format!(
-            "flutter_rust_bridge::for_generated::rust_async::RwLock{rw_pascal}Guard<'a, {}>",
+            "flutter_rust_bridge::for_generated::rust_async::Mutex{rw_pascal}Guard<'a, {}>",
             variant.ty_name
         )
     });

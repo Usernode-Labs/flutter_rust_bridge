@@ -12,7 +12,7 @@ use anyhow::Result;
 use flutter_rust_bridge::{opaque_dyn, RustOpaqueNom};
 use std::fmt::Debug;
 use std::ops::Deref;
-pub use std::sync::{Mutex, RwLock};
+pub use std::sync::{Mutex, Mutex};
 
 pub struct HideDataTwinRustAsyncMoi(pub HideDataRaw);
 pub struct NonCloneDataTwinRustAsyncMoi(pub NonCloneDataRaw);
@@ -31,7 +31,7 @@ pub enum EnumOpaqueTwinRustAsyncMoi {
     Primitive(crate::frb_generated::RustOpaqueMoi<i16>),
     TraitObj(crate::frb_generated::RustOpaqueMoi<Box<dyn DartDebugTwinRustAsyncMoi>>),
     Mutex(crate::frb_generated::RustOpaqueMoi<Mutex<HideDataTwinRustAsyncMoi>>),
-    RwLock(crate::frb_generated::RustOpaqueMoi<RwLock<HideDataTwinRustAsyncMoi>>),
+    Mutex(crate::frb_generated::RustOpaqueMoi<Mutex<HideDataTwinRustAsyncMoi>>),
     Nothing,
 }
 
@@ -71,7 +71,7 @@ pub async fn create_array_opaque_enum_twin_rust_async_moi() -> [EnumOpaqueTwinRu
         EnumOpaqueTwinRustAsyncMoi::Mutex(crate::frb_generated::RustOpaqueMoi::new(Mutex::new(
             HideDataTwinRustAsyncMoi(HideDataRaw::new()),
         ))),
-        EnumOpaqueTwinRustAsyncMoi::RwLock(crate::frb_generated::RustOpaqueMoi::new(RwLock::new(
+        EnumOpaqueTwinRustAsyncMoi::Mutex(crate::frb_generated::RustOpaqueMoi::new(Mutex::new(
             HideDataTwinRustAsyncMoi(HideDataRaw::new()),
         ))),
     ]
@@ -86,7 +86,7 @@ pub async fn run_enum_opaque_twin_rust_async_moi(opaque: EnumOpaqueTwinRustAsync
         EnumOpaqueTwinRustAsyncMoi::Mutex(m) => {
             format!("{:?}", m.lock().unwrap().0.hide_data())
         }
-        EnumOpaqueTwinRustAsyncMoi::RwLock(r) => {
+        EnumOpaqueTwinRustAsyncMoi::Mutex(r) => {
             format!("{:?}", r.read().unwrap().0.hide_data())
         }
         _ => "nothing".to_owned(),

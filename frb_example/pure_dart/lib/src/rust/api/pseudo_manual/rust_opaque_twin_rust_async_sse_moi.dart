@@ -128,8 +128,8 @@ abstract class MutexHideDataTwinRustAsyncSseMoi
 // Rust type: RustOpaqueMoi<NonCloneDataTwinRustAsyncSseMoi>
 abstract class NonCloneDataTwinRustAsyncSseMoi implements RustOpaqueInterface {}
 
-// Rust type: RustOpaqueMoi<RwLock < HideDataTwinRustAsyncSseMoi >>
-abstract class RwLockHideDataTwinRustAsyncSseMoi
+// Rust type: RustOpaqueMoi<Mutex < HideDataTwinRustAsyncSseMoi >>
+abstract class MutexHideDataTwinRustAsyncSseMoi
     implements RustOpaqueInterface {}
 
 @freezed
@@ -149,9 +149,9 @@ sealed class EnumOpaqueTwinRustAsyncSseMoi
   const factory EnumOpaqueTwinRustAsyncSseMoi.mutex(
     MutexHideDataTwinRustAsyncSseMoi field0,
   ) = EnumOpaqueTwinRustAsyncSseMoi_Mutex;
-  const factory EnumOpaqueTwinRustAsyncSseMoi.rwLock(
-    RwLockHideDataTwinRustAsyncSseMoi field0,
-  ) = EnumOpaqueTwinRustAsyncSseMoi_RwLock;
+  const factory EnumOpaqueTwinRustAsyncSseMoi.Mutex(
+    MutexHideDataTwinRustAsyncSseMoi field0,
+  ) = EnumOpaqueTwinRustAsyncSseMoi_Mutex;
   const factory EnumOpaqueTwinRustAsyncSseMoi.nothing() =
       EnumOpaqueTwinRustAsyncSseMoi_Nothing;
 }

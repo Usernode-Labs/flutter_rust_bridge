@@ -1,15 +1,15 @@
 use crate::lockable::order::LockableOrder;
 use std::fmt;
 use std::fmt::Formatter;
-use tokio::sync::RwLock;
+use tokio::sync::Mutex;
 
 pub struct RustAutoOpaqueInner<T> {
-    pub(crate) data: RwLock<T>,
+    pub(crate) data: Mutex<T>,
     pub(crate) order: LockableOrder,
 }
 
 impl<T> RustAutoOpaqueInner<T> {
-    pub(crate) fn new(data: RwLock<T>) -> Self {
+    pub(crate) fn new(data: Mutex<T>) -> Self {
         Self {
             data,
             order: LockableOrder::new(),

@@ -12,7 +12,7 @@ use anyhow::Result;
 use flutter_rust_bridge::{opaque_dyn, RustOpaqueNom};
 use std::fmt::Debug;
 use std::ops::Deref;
-pub use std::sync::{Mutex, RwLock};
+pub use std::sync::{Mutex, Mutex};
 
 pub struct HideDataTwinSyncSse(pub HideDataRaw);
 pub struct NonCloneDataTwinSyncSse(pub NonCloneDataRaw);
@@ -31,7 +31,7 @@ pub enum EnumOpaqueTwinSyncSse {
     Primitive(RustOpaque<i32>),
     TraitObj(RustOpaque<Box<dyn DartDebugTwinSyncSse>>),
     Mutex(RustOpaque<Mutex<HideDataTwinSyncSse>>),
-    RwLock(RustOpaque<RwLock<HideDataTwinSyncSse>>),
+    Mutex(RustOpaque<Mutex<HideDataTwinSyncSse>>),
     Nothing,
 }
 
@@ -71,7 +71,7 @@ pub fn create_array_opaque_enum_twin_sync_sse() -> [EnumOpaqueTwinSyncSse; 5] {
         EnumOpaqueTwinSyncSse::Mutex(RustOpaque::new(Mutex::new(HideDataTwinSyncSse(
             HideDataRaw::new(),
         )))),
-        EnumOpaqueTwinSyncSse::RwLock(RustOpaque::new(RwLock::new(HideDataTwinSyncSse(
+        EnumOpaqueTwinSyncSse::Mutex(RustOpaque::new(Mutex::new(HideDataTwinSyncSse(
             HideDataRaw::new(),
         )))),
     ]
@@ -87,7 +87,7 @@ pub fn run_enum_opaque_twin_sync_sse(opaque: EnumOpaqueTwinSyncSse) -> String {
         EnumOpaqueTwinSyncSse::Mutex(m) => {
             format!("{:?}", m.lock().unwrap().0.hide_data())
         }
-        EnumOpaqueTwinSyncSse::RwLock(r) => {
+        EnumOpaqueTwinSyncSse::Mutex(r) => {
             format!("{:?}", r.read().unwrap().0.hide_data())
         }
         _ => "nothing".to_owned(),

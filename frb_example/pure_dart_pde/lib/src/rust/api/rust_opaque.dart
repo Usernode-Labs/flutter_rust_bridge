@@ -101,8 +101,8 @@ abstract class MutexHideDataTwinNormal implements RustOpaqueInterface {}
 // Rust type: RustOpaqueMoi<NonCloneDataTwinNormal>
 abstract class NonCloneDataTwinNormal implements RustOpaqueInterface {}
 
-// Rust type: RustOpaqueMoi<RwLock < HideDataTwinNormal >>
-abstract class RwLockHideDataTwinNormal implements RustOpaqueInterface {}
+// Rust type: RustOpaqueMoi<Mutex < HideDataTwinNormal >>
+abstract class MutexHideDataTwinNormal implements RustOpaqueInterface {}
 
 @freezed
 sealed class EnumOpaqueTwinNormal with _$EnumOpaqueTwinNormal {
@@ -120,9 +120,9 @@ sealed class EnumOpaqueTwinNormal with _$EnumOpaqueTwinNormal {
   const factory EnumOpaqueTwinNormal.mutex(
     MutexHideDataTwinNormal field0,
   ) = EnumOpaqueTwinNormal_Mutex;
-  const factory EnumOpaqueTwinNormal.rwLock(
-    RwLockHideDataTwinNormal field0,
-  ) = EnumOpaqueTwinNormal_RwLock;
+  const factory EnumOpaqueTwinNormal.Mutex(
+    MutexHideDataTwinNormal field0,
+  ) = EnumOpaqueTwinNormal_Mutex;
   const factory EnumOpaqueTwinNormal.nothing() = EnumOpaqueTwinNormal_Nothing;
 }
 

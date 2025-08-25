@@ -30803,9 +30803,9 @@ flutter_rust_bridge::frb_generated_moi_arc_impl_value!(Mutex<HideDataTwinSync>);
 flutter_rust_bridge::frb_generated_moi_arc_impl_value!(NonCloneDataTwinNormal);
 flutter_rust_bridge::frb_generated_moi_arc_impl_value!(NonCloneDataTwinRustAsync);
 flutter_rust_bridge::frb_generated_moi_arc_impl_value!(NonCloneDataTwinSync);
-flutter_rust_bridge::frb_generated_moi_arc_impl_value!(RwLock<HideDataTwinNormal>);
-flutter_rust_bridge::frb_generated_moi_arc_impl_value!(RwLock<HideDataTwinRustAsync>);
-flutter_rust_bridge::frb_generated_moi_arc_impl_value!(RwLock<HideDataTwinSync>);
+flutter_rust_bridge::frb_generated_moi_arc_impl_value!(Mutex<HideDataTwinNormal>);
+flutter_rust_bridge::frb_generated_moi_arc_impl_value!(Mutex<HideDataTwinRustAsync>);
+flutter_rust_bridge::frb_generated_moi_arc_impl_value!(Mutex<HideDataTwinSync>);
 flutter_rust_bridge::frb_generated_moi_arc_impl_value!(
     flutter_rust_bridge::for_generated::RustAutoOpaqueInner<Box<dyn Any + Send + Sync + 'static>>
 );
@@ -31060,56 +31060,56 @@ pub fn frb_internal_no_impl_dummy_function_SimpleTraitForDynTwinNormalImplemento
 }
 
 impl SimpleTraitForDynTwinNormalImplementor {
-    pub fn blocking_read(&self) -> SimpleTraitForDynTwinNormalImplementorRwLockReadGuard {
+    pub fn blocking_read(&self) -> SimpleTraitForDynTwinNormalImplementorMutexReadGuard {
         match self {
             Self::Variant0(inner) => {
-                SimpleTraitForDynTwinNormalImplementorRwLockReadGuard::Variant0(
+                SimpleTraitForDynTwinNormalImplementorMutexReadGuard::Variant0(
                     inner.blocking_read(),
                 )
             }
             Self::Variant1(inner) => {
-                SimpleTraitForDynTwinNormalImplementorRwLockReadGuard::Variant1(
+                SimpleTraitForDynTwinNormalImplementorMutexReadGuard::Variant1(
                     inner.blocking_read(),
                 )
             }
         }
     }
 
-    pub fn blocking_write(&self) -> SimpleTraitForDynTwinNormalImplementorRwLockWriteGuard {
+    pub fn blocking_write(&self) -> SimpleTraitForDynTwinNormalImplementorMutexWriteGuard {
         match self {
             Self::Variant0(inner) => {
-                SimpleTraitForDynTwinNormalImplementorRwLockWriteGuard::Variant0(
+                SimpleTraitForDynTwinNormalImplementorMutexWriteGuard::Variant0(
                     inner.blocking_write(),
                 )
             }
             Self::Variant1(inner) => {
-                SimpleTraitForDynTwinNormalImplementorRwLockWriteGuard::Variant1(
+                SimpleTraitForDynTwinNormalImplementorMutexWriteGuard::Variant1(
                     inner.blocking_write(),
                 )
             }
         }
     }
 
-    pub async fn read(&self) -> SimpleTraitForDynTwinNormalImplementorRwLockReadGuard {
+    pub async fn read(&self) -> SimpleTraitForDynTwinNormalImplementorMutexReadGuard {
         match self {
             Self::Variant0(inner) => {
-                SimpleTraitForDynTwinNormalImplementorRwLockReadGuard::Variant0(inner.read().await)
+                SimpleTraitForDynTwinNormalImplementorMutexReadGuard::Variant0(inner.read().await)
             }
             Self::Variant1(inner) => {
-                SimpleTraitForDynTwinNormalImplementorRwLockReadGuard::Variant1(inner.read().await)
+                SimpleTraitForDynTwinNormalImplementorMutexReadGuard::Variant1(inner.read().await)
             }
         }
     }
 
-    pub async fn write(&self) -> SimpleTraitForDynTwinNormalImplementorRwLockWriteGuard {
+    pub async fn write(&self) -> SimpleTraitForDynTwinNormalImplementorMutexWriteGuard {
         match self {
             Self::Variant0(inner) => {
-                SimpleTraitForDynTwinNormalImplementorRwLockWriteGuard::Variant0(
+                SimpleTraitForDynTwinNormalImplementorMutexWriteGuard::Variant0(
                     inner.write().await,
                 )
             }
             Self::Variant1(inner) => {
-                SimpleTraitForDynTwinNormalImplementorRwLockWriteGuard::Variant1(
+                SimpleTraitForDynTwinNormalImplementorMutexWriteGuard::Variant1(
                     inner.write().await,
                 )
             }
@@ -31118,8 +31118,8 @@ impl SimpleTraitForDynTwinNormalImplementor {
 }
 
 impl Lockable for SimpleTraitForDynTwinNormalImplementor {
-    type RwLockReadGuard<'a> = SimpleTraitForDynTwinNormalImplementorRwLockReadGuard<'a>;
-    type RwLockWriteGuard<'a> = SimpleTraitForDynTwinNormalImplementorRwLockWriteGuard<'a>;
+    type MutexReadGuard<'a> = SimpleTraitForDynTwinNormalImplementorMutexReadGuard<'a>;
+    type MutexWriteGuard<'a> = SimpleTraitForDynTwinNormalImplementorMutexWriteGuard<'a>;
 
     fn lockable_order(&self) -> flutter_rust_bridge::for_generated::LockableOrder {
         match self {
@@ -31132,17 +31132,17 @@ impl Lockable for SimpleTraitForDynTwinNormalImplementor {
         }
     }
 
-    fn lockable_decode_sync_ref(&self) -> Self::RwLockReadGuard<'_> {
+    fn lockable_decode_sync_ref(&self) -> Self::MutexReadGuard<'_> {
         self.blocking_read()
     }
 
-    fn lockable_decode_sync_ref_mut(&self) -> Self::RwLockWriteGuard<'_> {
+    fn lockable_decode_sync_ref_mut(&self) -> Self::MutexWriteGuard<'_> {
         self.blocking_write()
     }
 
     fn lockable_decode_async_ref<'a>(
         &'a self,
-    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::RwLockReadGuard<'a>> + Send + 'a>>
+    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::MutexReadGuard<'a>> + Send + 'a>>
     where
         Self: Sync + 'a,
     {
@@ -31151,7 +31151,7 @@ impl Lockable for SimpleTraitForDynTwinNormalImplementor {
 
     fn lockable_decode_async_ref_mut<'a>(
         &'a self,
-    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::RwLockWriteGuard<'a>> + Send + 'a>>
+    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::MutexWriteGuard<'a>> + Send + 'a>>
     where
         Self: Sync + 'a,
     {
@@ -31159,22 +31159,22 @@ impl Lockable for SimpleTraitForDynTwinNormalImplementor {
     }
 }
 
-pub enum SimpleTraitForDynTwinNormalImplementorRwLockReadGuard<'a> {
+pub enum SimpleTraitForDynTwinNormalImplementorMutexReadGuard<'a> {
     Variant0(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<
             'a,
             StructOneWithTraitForDynTwinNormal,
         >,
     ),
     Variant1(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<
             'a,
             StructTwoWithTraitForDynTwinNormal,
         >,
     ),
 }
 
-impl std::ops::Deref for SimpleTraitForDynTwinNormalImplementorRwLockReadGuard<'_> {
+impl std::ops::Deref for SimpleTraitForDynTwinNormalImplementorMutexReadGuard<'_> {
     type Target = dyn SimpleTraitForDynTwinNormal;
 
     fn deref(&self) -> &Self::Target {
@@ -31185,22 +31185,22 @@ impl std::ops::Deref for SimpleTraitForDynTwinNormalImplementorRwLockReadGuard<'
     }
 }
 
-pub enum SimpleTraitForDynTwinNormalImplementorRwLockWriteGuard<'a> {
+pub enum SimpleTraitForDynTwinNormalImplementorMutexWriteGuard<'a> {
     Variant0(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<
             'a,
             StructOneWithTraitForDynTwinNormal,
         >,
     ),
     Variant1(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<
             'a,
             StructTwoWithTraitForDynTwinNormal,
         >,
     ),
 }
 
-impl std::ops::Deref for SimpleTraitForDynTwinNormalImplementorRwLockWriteGuard<'_> {
+impl std::ops::Deref for SimpleTraitForDynTwinNormalImplementorMutexWriteGuard<'_> {
     type Target = dyn SimpleTraitForDynTwinNormal;
 
     fn deref(&self) -> &Self::Target {
@@ -31211,7 +31211,7 @@ impl std::ops::Deref for SimpleTraitForDynTwinNormalImplementorRwLockWriteGuard<
     }
 }
 
-impl std::ops::DerefMut for SimpleTraitForDynTwinNormalImplementorRwLockWriteGuard<'_> {
+impl std::ops::DerefMut for SimpleTraitForDynTwinNormalImplementorMutexWriteGuard<'_> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         match self {
             Self::Variant0(inner) => inner.deref_mut(),
@@ -31232,34 +31232,34 @@ pub fn frb_internal_no_impl_dummy_function_Auto_Ref_RustOpaque_flutter_rust_brid
 }
 
 impl Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnum {
-            pub fn blocking_read(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockReadGuard {
+            pub fn blocking_read(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexReadGuard {
                 match self {
-            Self::Variant0(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockReadGuard::Variant0(inner.blocking_read()),
-Self::Variant1(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockReadGuard::Variant1(inner.blocking_read()),
+            Self::Variant0(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexReadGuard::Variant0(inner.blocking_read()),
+Self::Variant1(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexReadGuard::Variant1(inner.blocking_read()),
 
         }
             }
 
-            pub fn blocking_write(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockWriteGuard {
+            pub fn blocking_write(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexWriteGuard {
                 unreachable!()
             }
 
-            pub async fn read(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockReadGuard {
+            pub async fn read(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexReadGuard {
                 match self {
-            Self::Variant0(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockReadGuard::Variant0(inner.read().await),
-Self::Variant1(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockReadGuard::Variant1(inner.read().await),
+            Self::Variant0(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexReadGuard::Variant0(inner.read().await),
+Self::Variant1(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexReadGuard::Variant1(inner.read().await),
 
         }
             }
 
-            pub async fn write(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockWriteGuard {
+            pub async fn write(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexWriteGuard {
                 unreachable!()
             }
         }
 
 impl Lockable for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnum {
-            type RwLockReadGuard<'a> = Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockReadGuard<'a>;
-            type RwLockWriteGuard<'a> = Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockWriteGuard<'a>;
+            type MutexReadGuard<'a> = Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexReadGuard<'a>;
+            type MutexWriteGuard<'a> = Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexWriteGuard<'a>;
 
             fn lockable_order(&self) -> flutter_rust_bridge::for_generated::LockableOrder {
                 match self {
@@ -31269,17 +31269,17 @@ Self::Variant1(inner) => flutter_rust_bridge::for_generated::rust_auto_opaque_lo
         }
             }
 
-            fn lockable_decode_sync_ref(&self) -> Self::RwLockReadGuard<'_> {
+            fn lockable_decode_sync_ref(&self) -> Self::MutexReadGuard<'_> {
                 self.blocking_read()
             }
 
-            fn lockable_decode_sync_ref_mut(&self) -> Self::RwLockWriteGuard<'_> {
+            fn lockable_decode_sync_ref_mut(&self) -> Self::MutexWriteGuard<'_> {
                 self.blocking_write()
             }
 
             fn lockable_decode_async_ref<'a>(
                 &'a self,
-            ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::RwLockReadGuard<'a>> + Send + 'a>>
+            ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::MutexReadGuard<'a>> + Send + 'a>>
             where
                 Self: Sync + 'a,
             {
@@ -31288,7 +31288,7 @@ Self::Variant1(inner) => flutter_rust_bridge::for_generated::rust_auto_opaque_lo
 
             fn lockable_decode_async_ref_mut<'a>(
                 &'a self,
-            ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::RwLockWriteGuard<'a>> + Send + 'a>>
+            ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::MutexWriteGuard<'a>> + Send + 'a>>
             where
                 Self: Sync + 'a,
             {
@@ -31296,14 +31296,14 @@ Self::Variant1(inner) => flutter_rust_bridge::for_generated::rust_auto_opaque_lo
             }
         }
 
-pub enum Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockReadGuard<
+pub enum Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexReadGuard<
     'a,
 > {
-    Variant0(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, MyNodeTwinNormal>),
-    Variant1(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, MyNodeTwinNormal>),
+    Variant0(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, MyNodeTwinNormal>),
+    Variant1(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, MyNodeTwinNormal>),
 }
 
-impl std::ops::Deref for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockReadGuard<'_> {
+impl std::ops::Deref for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexReadGuard<'_> {
             type Target = MyAudioParamTwinNormal;
 
             fn deref(&self) -> &Self::Target {
@@ -31315,18 +31315,18 @@ Self::Variant1(inner) => inner.deref().param_two_twin_normal(),
             }
         }
 
-pub enum Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockWriteGuard<
+pub enum Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexWriteGuard<
     'a,
 > {
     Variant0(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, MyNodeTwinNormal>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, MyNodeTwinNormal>,
     ),
     Variant1(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, MyNodeTwinNormal>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, MyNodeTwinNormal>,
     ),
 }
 
-impl std::ops::Deref for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockWriteGuard<'_> {
+impl std::ops::Deref for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexWriteGuard<'_> {
             type Target = MyAudioParamTwinNormal;
 
             fn deref(&self) -> &Self::Target {
@@ -31338,7 +31338,7 @@ Self::Variant1(inner) => inner.deref().param_two_twin_normal(),
             }
         }
 
-impl std::ops::DerefMut for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumRwLockWriteGuard<'_> {
+impl std::ops::DerefMut for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyAudioParamTwinNormalProxyEnumMutexWriteGuard<'_> {
                 fn deref_mut(&mut self) -> &mut Self::Target {
                     unreachable!()
                 }
@@ -32874,7 +32874,7 @@ impl SseDecode for RustOpaqueMoi<NonCloneDataTwinSync> {
     }
 }
 
-impl SseDecode for RustOpaqueMoi<RwLock<HideDataTwinNormal>> {
+impl SseDecode for RustOpaqueMoi<Mutex<HideDataTwinNormal>> {
     // Codec=Sse (Serialization based), see doc to use other codecs
     fn sse_decode(deserializer: &mut flutter_rust_bridge::for_generated::SseDeserializer) -> Self {
         let mut inner = <usize>::sse_decode(deserializer);
@@ -32882,7 +32882,7 @@ impl SseDecode for RustOpaqueMoi<RwLock<HideDataTwinNormal>> {
     }
 }
 
-impl SseDecode for RustOpaqueMoi<RwLock<HideDataTwinRustAsync>> {
+impl SseDecode for RustOpaqueMoi<Mutex<HideDataTwinRustAsync>> {
     // Codec=Sse (Serialization based), see doc to use other codecs
     fn sse_decode(deserializer: &mut flutter_rust_bridge::for_generated::SseDeserializer) -> Self {
         let mut inner = <usize>::sse_decode(deserializer);
@@ -32890,7 +32890,7 @@ impl SseDecode for RustOpaqueMoi<RwLock<HideDataTwinRustAsync>> {
     }
 }
 
-impl SseDecode for RustOpaqueMoi<RwLock<HideDataTwinSync>> {
+impl SseDecode for RustOpaqueMoi<Mutex<HideDataTwinSync>> {
     // Codec=Sse (Serialization based), see doc to use other codecs
     fn sse_decode(deserializer: &mut flutter_rust_bridge::for_generated::SseDeserializer) -> Self {
         let mut inner = <usize>::sse_decode(deserializer);
@@ -35992,8 +35992,8 @@ impl SseDecode for crate::api::rust_opaque::EnumOpaqueTwinNormal {
             }
             4 => {
                 let mut var_field0 =
-                    <RustOpaqueMoi<RwLock<HideDataTwinNormal>>>::sse_decode(deserializer);
-                return crate::api::rust_opaque::EnumOpaqueTwinNormal::RwLock(var_field0);
+                    <RustOpaqueMoi<Mutex<HideDataTwinNormal>>>::sse_decode(deserializer);
+                return crate::api::rust_opaque::EnumOpaqueTwinNormal::Mutex(var_field0);
             }
             5 => {
                 return crate::api::rust_opaque::EnumOpaqueTwinNormal::Nothing;
@@ -36040,8 +36040,8 @@ impl SseDecode for crate::api::pseudo_manual::rust_opaque_twin_rust_async::EnumO
             }
             4 => {
                 let mut var_field0 =
-                    <RustOpaqueMoi<RwLock<HideDataTwinRustAsync>>>::sse_decode(deserializer);
-                return crate::api::pseudo_manual::rust_opaque_twin_rust_async::EnumOpaqueTwinRustAsync::RwLock(var_field0);
+                    <RustOpaqueMoi<Mutex<HideDataTwinRustAsync>>>::sse_decode(deserializer);
+                return crate::api::pseudo_manual::rust_opaque_twin_rust_async::EnumOpaqueTwinRustAsync::Mutex(var_field0);
             }
             5 => {
                 return crate::api::pseudo_manual::rust_opaque_twin_rust_async::EnumOpaqueTwinRustAsync::Nothing;
@@ -36092,8 +36092,8 @@ impl SseDecode for crate::api::pseudo_manual::rust_opaque_twin_sync::EnumOpaqueT
             }
             4 => {
                 let mut var_field0 =
-                    <RustOpaqueMoi<RwLock<HideDataTwinSync>>>::sse_decode(deserializer);
-                return crate::api::pseudo_manual::rust_opaque_twin_sync::EnumOpaqueTwinSync::RwLock(var_field0);
+                    <RustOpaqueMoi<Mutex<HideDataTwinSync>>>::sse_decode(deserializer);
+                return crate::api::pseudo_manual::rust_opaque_twin_sync::EnumOpaqueTwinSync::Mutex(var_field0);
             }
             5 => {
                 return crate::api::pseudo_manual::rust_opaque_twin_sync::EnumOpaqueTwinSync::Nothing;
@@ -47317,7 +47317,7 @@ impl flutter_rust_bridge::IntoDart for crate::api::rust_opaque::EnumOpaqueTwinNo
             crate::api::rust_opaque::EnumOpaqueTwinNormal::Mutex(field0) => {
                 [3.into_dart(), field0.into_into_dart().into_dart()].into_dart()
             }
-            crate::api::rust_opaque::EnumOpaqueTwinNormal::RwLock(field0) => {
+            crate::api::rust_opaque::EnumOpaqueTwinNormal::Mutex(field0) => {
                 [4.into_dart(), field0.into_into_dart().into_dart()].into_dart()
             }
             crate::api::rust_opaque::EnumOpaqueTwinNormal::Nothing => [5.into_dart()].into_dart(),
@@ -47351,7 +47351,7 @@ crate::api::pseudo_manual::rust_opaque_twin_rust_async::EnumOpaqueTwinRustAsync:
 field0.into_into_dart().into_dart()].into_dart() }
 crate::api::pseudo_manual::rust_opaque_twin_rust_async::EnumOpaqueTwinRustAsync::Mutex(field0) => { [3.into_dart(),
 field0.into_into_dart().into_dart()].into_dart() }
-crate::api::pseudo_manual::rust_opaque_twin_rust_async::EnumOpaqueTwinRustAsync::RwLock(field0) => { [4.into_dart(),
+crate::api::pseudo_manual::rust_opaque_twin_rust_async::EnumOpaqueTwinRustAsync::Mutex(field0) => { [4.into_dart(),
 field0.into_into_dart().into_dart()].into_dart() }
 crate::api::pseudo_manual::rust_opaque_twin_rust_async::EnumOpaqueTwinRustAsync::Nothing => { [5.into_dart()].into_dart() }
  _ => { unimplemented!(""); }}
@@ -47390,7 +47390,7 @@ impl flutter_rust_bridge::IntoDart
             crate::api::pseudo_manual::rust_opaque_twin_sync::EnumOpaqueTwinSync::Mutex(field0) => {
                 [3.into_dart(), field0.into_into_dart().into_dart()].into_dart()
             }
-            crate::api::pseudo_manual::rust_opaque_twin_sync::EnumOpaqueTwinSync::RwLock(
+            crate::api::pseudo_manual::rust_opaque_twin_sync::EnumOpaqueTwinSync::Mutex(
                 field0,
             ) => [4.into_dart(), field0.into_into_dart().into_dart()].into_dart(),
             crate::api::pseudo_manual::rust_opaque_twin_sync::EnumOpaqueTwinSync::Nothing => {
@@ -53732,7 +53732,7 @@ impl SseEncode for RustOpaqueMoi<NonCloneDataTwinSync> {
     }
 }
 
-impl SseEncode for RustOpaqueMoi<RwLock<HideDataTwinNormal>> {
+impl SseEncode for RustOpaqueMoi<Mutex<HideDataTwinNormal>> {
     // Codec=Sse (Serialization based), see doc to use other codecs
     fn sse_encode(self, serializer: &mut flutter_rust_bridge::for_generated::SseSerializer) {
         let (ptr, size) = self.sse_encode_raw();
@@ -53741,7 +53741,7 @@ impl SseEncode for RustOpaqueMoi<RwLock<HideDataTwinNormal>> {
     }
 }
 
-impl SseEncode for RustOpaqueMoi<RwLock<HideDataTwinRustAsync>> {
+impl SseEncode for RustOpaqueMoi<Mutex<HideDataTwinRustAsync>> {
     // Codec=Sse (Serialization based), see doc to use other codecs
     fn sse_encode(self, serializer: &mut flutter_rust_bridge::for_generated::SseSerializer) {
         let (ptr, size) = self.sse_encode_raw();
@@ -53750,7 +53750,7 @@ impl SseEncode for RustOpaqueMoi<RwLock<HideDataTwinRustAsync>> {
     }
 }
 
-impl SseEncode for RustOpaqueMoi<RwLock<HideDataTwinSync>> {
+impl SseEncode for RustOpaqueMoi<Mutex<HideDataTwinSync>> {
     // Codec=Sse (Serialization based), see doc to use other codecs
     fn sse_encode(self, serializer: &mut flutter_rust_bridge::for_generated::SseSerializer) {
         let (ptr, size) = self.sse_encode_raw();
@@ -56540,9 +56540,9 @@ impl SseEncode for crate::api::rust_opaque::EnumOpaqueTwinNormal {
                 <i32>::sse_encode(3, serializer);
                 <RustOpaqueMoi<Mutex<HideDataTwinNormal>>>::sse_encode(field0, serializer);
             }
-            crate::api::rust_opaque::EnumOpaqueTwinNormal::RwLock(field0) => {
+            crate::api::rust_opaque::EnumOpaqueTwinNormal::Mutex(field0) => {
                 <i32>::sse_encode(4, serializer);
-                <RustOpaqueMoi<RwLock<HideDataTwinNormal>>>::sse_encode(field0, serializer);
+                <RustOpaqueMoi<Mutex<HideDataTwinNormal>>>::sse_encode(field0, serializer);
             }
             crate::api::rust_opaque::EnumOpaqueTwinNormal::Nothing => {
                 <i32>::sse_encode(5, serializer);
@@ -56578,7 +56578,7 @@ crate::api::pseudo_manual::rust_opaque_twin_rust_async::EnumOpaqueTwinRustAsync:
  }
 crate::api::pseudo_manual::rust_opaque_twin_rust_async::EnumOpaqueTwinRustAsync::Mutex(field0) => { <i32>::sse_encode(3, serializer); <RustOpaqueMoi<Mutex < HideDataTwinRustAsync >>>::sse_encode(field0, serializer);
  }
-crate::api::pseudo_manual::rust_opaque_twin_rust_async::EnumOpaqueTwinRustAsync::RwLock(field0) => { <i32>::sse_encode(4, serializer); <RustOpaqueMoi<RwLock < HideDataTwinRustAsync >>>::sse_encode(field0, serializer);
+crate::api::pseudo_manual::rust_opaque_twin_rust_async::EnumOpaqueTwinRustAsync::Mutex(field0) => { <i32>::sse_encode(4, serializer); <RustOpaqueMoi<Mutex < HideDataTwinRustAsync >>>::sse_encode(field0, serializer);
  }
 crate::api::pseudo_manual::rust_opaque_twin_rust_async::EnumOpaqueTwinRustAsync::Nothing => { <i32>::sse_encode(5, serializer);  }
  _ => { unimplemented!(""); }}
@@ -56620,11 +56620,11 @@ impl SseEncode for crate::api::pseudo_manual::rust_opaque_twin_sync::EnumOpaqueT
                 <i32>::sse_encode(3, serializer);
                 <RustOpaqueMoi<Mutex<HideDataTwinSync>>>::sse_encode(field0, serializer);
             }
-            crate::api::pseudo_manual::rust_opaque_twin_sync::EnumOpaqueTwinSync::RwLock(
+            crate::api::pseudo_manual::rust_opaque_twin_sync::EnumOpaqueTwinSync::Mutex(
                 field0,
             ) => {
                 <i32>::sse_encode(4, serializer);
-                <RustOpaqueMoi<RwLock<HideDataTwinSync>>>::sse_encode(field0, serializer);
+                <RustOpaqueMoi<Mutex<HideDataTwinSync>>>::sse_encode(field0, serializer);
             }
             crate::api::pseudo_manual::rust_opaque_twin_sync::EnumOpaqueTwinSync::Nothing => {
                 <i32>::sse_encode(5, serializer);
@@ -62071,45 +62071,45 @@ mod io {
     }
 
     #[unsafe(no_mangle)]
-    pub extern "C" fn frbgen_frb_example_pure_dart_pde_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinNormal(
+    pub extern "C" fn frbgen_frb_example_pure_dart_pde_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinNormal(
         ptr: *const std::ffi::c_void,
     ) {
-        MoiArc::<RwLock<HideDataTwinNormal>>::increment_strong_count(ptr as _);
+        MoiArc::<Mutex<HideDataTwinNormal>>::increment_strong_count(ptr as _);
     }
 
     #[unsafe(no_mangle)]
-    pub extern "C" fn frbgen_frb_example_pure_dart_pde_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinNormal(
+    pub extern "C" fn frbgen_frb_example_pure_dart_pde_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinNormal(
         ptr: *const std::ffi::c_void,
     ) {
-        MoiArc::<RwLock<HideDataTwinNormal>>::decrement_strong_count(ptr as _);
+        MoiArc::<Mutex<HideDataTwinNormal>>::decrement_strong_count(ptr as _);
     }
 
     #[unsafe(no_mangle)]
-    pub extern "C" fn frbgen_frb_example_pure_dart_pde_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsync(
+    pub extern "C" fn frbgen_frb_example_pure_dart_pde_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsync(
         ptr: *const std::ffi::c_void,
     ) {
-        MoiArc::<RwLock<HideDataTwinRustAsync>>::increment_strong_count(ptr as _);
+        MoiArc::<Mutex<HideDataTwinRustAsync>>::increment_strong_count(ptr as _);
     }
 
     #[unsafe(no_mangle)]
-    pub extern "C" fn frbgen_frb_example_pure_dart_pde_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsync(
+    pub extern "C" fn frbgen_frb_example_pure_dart_pde_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsync(
         ptr: *const std::ffi::c_void,
     ) {
-        MoiArc::<RwLock<HideDataTwinRustAsync>>::decrement_strong_count(ptr as _);
+        MoiArc::<Mutex<HideDataTwinRustAsync>>::decrement_strong_count(ptr as _);
     }
 
     #[unsafe(no_mangle)]
-    pub extern "C" fn frbgen_frb_example_pure_dart_pde_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSync(
+    pub extern "C" fn frbgen_frb_example_pure_dart_pde_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSync(
         ptr: *const std::ffi::c_void,
     ) {
-        MoiArc::<RwLock<HideDataTwinSync>>::increment_strong_count(ptr as _);
+        MoiArc::<Mutex<HideDataTwinSync>>::increment_strong_count(ptr as _);
     }
 
     #[unsafe(no_mangle)]
-    pub extern "C" fn frbgen_frb_example_pure_dart_pde_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSync(
+    pub extern "C" fn frbgen_frb_example_pure_dart_pde_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSync(
         ptr: *const std::ffi::c_void,
     ) {
-        MoiArc::<RwLock<HideDataTwinSync>>::decrement_strong_count(ptr as _);
+        MoiArc::<Mutex<HideDataTwinSync>>::decrement_strong_count(ptr as _);
     }
 
     #[unsafe(no_mangle)]
@@ -63651,45 +63651,45 @@ mod web {
     }
 
     #[wasm_bindgen]
-    pub fn rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinNormal(
+    pub fn rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinNormal(
         ptr: *const std::ffi::c_void,
     ) {
-        MoiArc::<RwLock<HideDataTwinNormal>>::increment_strong_count(ptr as _);
+        MoiArc::<Mutex<HideDataTwinNormal>>::increment_strong_count(ptr as _);
     }
 
     #[wasm_bindgen]
-    pub fn rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinNormal(
+    pub fn rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinNormal(
         ptr: *const std::ffi::c_void,
     ) {
-        MoiArc::<RwLock<HideDataTwinNormal>>::decrement_strong_count(ptr as _);
+        MoiArc::<Mutex<HideDataTwinNormal>>::decrement_strong_count(ptr as _);
     }
 
     #[wasm_bindgen]
-    pub fn rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsync(
+    pub fn rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsync(
         ptr: *const std::ffi::c_void,
     ) {
-        MoiArc::<RwLock<HideDataTwinRustAsync>>::increment_strong_count(ptr as _);
+        MoiArc::<Mutex<HideDataTwinRustAsync>>::increment_strong_count(ptr as _);
     }
 
     #[wasm_bindgen]
-    pub fn rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsync(
+    pub fn rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsync(
         ptr: *const std::ffi::c_void,
     ) {
-        MoiArc::<RwLock<HideDataTwinRustAsync>>::decrement_strong_count(ptr as _);
+        MoiArc::<Mutex<HideDataTwinRustAsync>>::decrement_strong_count(ptr as _);
     }
 
     #[wasm_bindgen]
-    pub fn rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSync(
+    pub fn rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSync(
         ptr: *const std::ffi::c_void,
     ) {
-        MoiArc::<RwLock<HideDataTwinSync>>::increment_strong_count(ptr as _);
+        MoiArc::<Mutex<HideDataTwinSync>>::increment_strong_count(ptr as _);
     }
 
     #[wasm_bindgen]
-    pub fn rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSync(
+    pub fn rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSync(
         ptr: *const std::ffi::c_void,
     ) {
-        MoiArc::<RwLock<HideDataTwinSync>>::decrement_strong_count(ptr as _);
+        MoiArc::<Mutex<HideDataTwinSync>>::decrement_strong_count(ptr as _);
     }
 
     #[wasm_bindgen]

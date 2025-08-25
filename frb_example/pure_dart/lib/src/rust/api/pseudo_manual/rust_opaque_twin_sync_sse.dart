@@ -111,8 +111,8 @@ abstract class MutexHideDataTwinSyncSse implements RustOpaqueInterface {}
 // Rust type: RustOpaqueNom<NonCloneDataTwinSyncSse>
 abstract class NonCloneDataTwinSyncSse implements RustOpaqueInterface {}
 
-// Rust type: RustOpaqueNom<RwLock < HideDataTwinSyncSse >>
-abstract class RwLockHideDataTwinSyncSse implements RustOpaqueInterface {}
+// Rust type: RustOpaqueNom<Mutex < HideDataTwinSyncSse >>
+abstract class MutexHideDataTwinSyncSse implements RustOpaqueInterface {}
 
 @freezed
 sealed class EnumOpaqueTwinSyncSse with _$EnumOpaqueTwinSyncSse {
@@ -130,9 +130,9 @@ sealed class EnumOpaqueTwinSyncSse with _$EnumOpaqueTwinSyncSse {
   const factory EnumOpaqueTwinSyncSse.mutex(
     MutexHideDataTwinSyncSse field0,
   ) = EnumOpaqueTwinSyncSse_Mutex;
-  const factory EnumOpaqueTwinSyncSse.rwLock(
-    RwLockHideDataTwinSyncSse field0,
-  ) = EnumOpaqueTwinSyncSse_RwLock;
+  const factory EnumOpaqueTwinSyncSse.Mutex(
+    MutexHideDataTwinSyncSse field0,
+  ) = EnumOpaqueTwinSyncSse_Mutex;
   const factory EnumOpaqueTwinSyncSse.nothing() = EnumOpaqueTwinSyncSse_Nothing;
 }
 

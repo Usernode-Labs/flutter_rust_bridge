@@ -27997,306 +27997,306 @@ pub enum AudioNodeImplementor {
 pub fn frb_internal_no_impl_dummy_function_AudioNodeImplementor(a: AudioNodeImplementor) {}
 
 impl AudioNodeImplementor {
-    pub fn blocking_read(&self) -> AudioNodeImplementorRwLockReadGuard {
+    pub fn blocking_read(&self) -> AudioNodeImplementorMutexReadGuard {
         match self {
             Self::Variant0(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant0(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant0(inner.blocking_read())
             }
             Self::Variant1(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant1(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant1(inner.blocking_read())
             }
             Self::Variant2(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant2(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant2(inner.blocking_read())
             }
             Self::Variant3(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant3(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant3(inner.blocking_read())
             }
             Self::Variant4(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant4(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant4(inner.blocking_read())
             }
             Self::Variant5(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant5(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant5(inner.blocking_read())
             }
             Self::Variant6(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant6(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant6(inner.blocking_read())
             }
             Self::Variant7(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant7(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant7(inner.blocking_read())
             }
             Self::Variant8(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant8(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant8(inner.blocking_read())
             }
             Self::Variant9(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant9(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant9(inner.blocking_read())
             }
             Self::Variant10(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant10(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant10(inner.blocking_read())
             }
             Self::Variant11(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant11(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant11(inner.blocking_read())
             }
             Self::Variant12(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant12(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant12(inner.blocking_read())
             }
             Self::Variant13(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant13(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant13(inner.blocking_read())
             }
             Self::Variant14(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant14(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant14(inner.blocking_read())
             }
             Self::Variant15(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant15(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant15(inner.blocking_read())
             }
             Self::Variant16(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant16(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant16(inner.blocking_read())
             }
             Self::Variant17(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant17(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant17(inner.blocking_read())
             }
             Self::Variant18(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant18(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant18(inner.blocking_read())
             }
             Self::Variant19(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant19(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant19(inner.blocking_read())
             }
             Self::Variant20(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant20(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant20(inner.blocking_read())
             }
             Self::Variant21(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant21(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant21(inner.blocking_read())
             }
             Self::Variant22(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant22(inner.blocking_read())
+                AudioNodeImplementorMutexReadGuard::Variant22(inner.blocking_read())
             }
         }
     }
 
-    pub fn blocking_write(&self) -> AudioNodeImplementorRwLockWriteGuard {
+    pub fn blocking_write(&self) -> AudioNodeImplementorMutexWriteGuard {
         match self {
             Self::Variant0(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant0(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant0(inner.blocking_write())
             }
             Self::Variant1(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant1(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant1(inner.blocking_write())
             }
             Self::Variant2(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant2(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant2(inner.blocking_write())
             }
             Self::Variant3(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant3(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant3(inner.blocking_write())
             }
             Self::Variant4(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant4(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant4(inner.blocking_write())
             }
             Self::Variant5(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant5(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant5(inner.blocking_write())
             }
             Self::Variant6(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant6(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant6(inner.blocking_write())
             }
             Self::Variant7(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant7(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant7(inner.blocking_write())
             }
             Self::Variant8(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant8(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant8(inner.blocking_write())
             }
             Self::Variant9(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant9(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant9(inner.blocking_write())
             }
             Self::Variant10(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant10(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant10(inner.blocking_write())
             }
             Self::Variant11(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant11(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant11(inner.blocking_write())
             }
             Self::Variant12(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant12(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant12(inner.blocking_write())
             }
             Self::Variant13(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant13(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant13(inner.blocking_write())
             }
             Self::Variant14(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant14(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant14(inner.blocking_write())
             }
             Self::Variant15(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant15(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant15(inner.blocking_write())
             }
             Self::Variant16(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant16(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant16(inner.blocking_write())
             }
             Self::Variant17(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant17(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant17(inner.blocking_write())
             }
             Self::Variant18(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant18(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant18(inner.blocking_write())
             }
             Self::Variant19(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant19(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant19(inner.blocking_write())
             }
             Self::Variant20(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant20(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant20(inner.blocking_write())
             }
             Self::Variant21(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant21(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant21(inner.blocking_write())
             }
             Self::Variant22(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant22(inner.blocking_write())
+                AudioNodeImplementorMutexWriteGuard::Variant22(inner.blocking_write())
             }
         }
     }
 
-    pub async fn read(&self) -> AudioNodeImplementorRwLockReadGuard {
+    pub async fn read(&self) -> AudioNodeImplementorMutexReadGuard {
         match self {
             Self::Variant0(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant0(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant0(inner.read().await)
             }
             Self::Variant1(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant1(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant1(inner.read().await)
             }
             Self::Variant2(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant2(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant2(inner.read().await)
             }
             Self::Variant3(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant3(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant3(inner.read().await)
             }
             Self::Variant4(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant4(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant4(inner.read().await)
             }
             Self::Variant5(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant5(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant5(inner.read().await)
             }
             Self::Variant6(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant6(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant6(inner.read().await)
             }
             Self::Variant7(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant7(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant7(inner.read().await)
             }
             Self::Variant8(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant8(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant8(inner.read().await)
             }
             Self::Variant9(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant9(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant9(inner.read().await)
             }
             Self::Variant10(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant10(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant10(inner.read().await)
             }
             Self::Variant11(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant11(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant11(inner.read().await)
             }
             Self::Variant12(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant12(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant12(inner.read().await)
             }
             Self::Variant13(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant13(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant13(inner.read().await)
             }
             Self::Variant14(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant14(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant14(inner.read().await)
             }
             Self::Variant15(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant15(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant15(inner.read().await)
             }
             Self::Variant16(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant16(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant16(inner.read().await)
             }
             Self::Variant17(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant17(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant17(inner.read().await)
             }
             Self::Variant18(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant18(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant18(inner.read().await)
             }
             Self::Variant19(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant19(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant19(inner.read().await)
             }
             Self::Variant20(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant20(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant20(inner.read().await)
             }
             Self::Variant21(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant21(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant21(inner.read().await)
             }
             Self::Variant22(inner) => {
-                AudioNodeImplementorRwLockReadGuard::Variant22(inner.read().await)
+                AudioNodeImplementorMutexReadGuard::Variant22(inner.read().await)
             }
         }
     }
 
-    pub async fn write(&self) -> AudioNodeImplementorRwLockWriteGuard {
+    pub async fn write(&self) -> AudioNodeImplementorMutexWriteGuard {
         match self {
             Self::Variant0(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant0(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant0(inner.write().await)
             }
             Self::Variant1(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant1(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant1(inner.write().await)
             }
             Self::Variant2(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant2(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant2(inner.write().await)
             }
             Self::Variant3(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant3(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant3(inner.write().await)
             }
             Self::Variant4(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant4(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant4(inner.write().await)
             }
             Self::Variant5(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant5(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant5(inner.write().await)
             }
             Self::Variant6(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant6(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant6(inner.write().await)
             }
             Self::Variant7(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant7(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant7(inner.write().await)
             }
             Self::Variant8(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant8(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant8(inner.write().await)
             }
             Self::Variant9(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant9(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant9(inner.write().await)
             }
             Self::Variant10(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant10(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant10(inner.write().await)
             }
             Self::Variant11(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant11(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant11(inner.write().await)
             }
             Self::Variant12(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant12(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant12(inner.write().await)
             }
             Self::Variant13(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant13(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant13(inner.write().await)
             }
             Self::Variant14(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant14(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant14(inner.write().await)
             }
             Self::Variant15(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant15(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant15(inner.write().await)
             }
             Self::Variant16(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant16(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant16(inner.write().await)
             }
             Self::Variant17(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant17(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant17(inner.write().await)
             }
             Self::Variant18(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant18(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant18(inner.write().await)
             }
             Self::Variant19(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant19(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant19(inner.write().await)
             }
             Self::Variant20(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant20(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant20(inner.write().await)
             }
             Self::Variant21(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant21(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant21(inner.write().await)
             }
             Self::Variant22(inner) => {
-                AudioNodeImplementorRwLockWriteGuard::Variant22(inner.write().await)
+                AudioNodeImplementorMutexWriteGuard::Variant22(inner.write().await)
             }
         }
     }
 }
 
 impl Lockable for AudioNodeImplementor {
-    type RwLockReadGuard<'a> = AudioNodeImplementorRwLockReadGuard<'a>;
-    type RwLockWriteGuard<'a> = AudioNodeImplementorRwLockWriteGuard<'a>;
+    type MutexReadGuard<'a> = AudioNodeImplementorMutexReadGuard<'a>;
+    type MutexWriteGuard<'a> = AudioNodeImplementorMutexWriteGuard<'a>;
 
     fn lockable_order(&self) -> flutter_rust_bridge::for_generated::LockableOrder {
         match self {
@@ -28372,17 +28372,17 @@ impl Lockable for AudioNodeImplementor {
         }
     }
 
-    fn lockable_decode_sync_ref(&self) -> Self::RwLockReadGuard<'_> {
+    fn lockable_decode_sync_ref(&self) -> Self::MutexReadGuard<'_> {
         self.blocking_read()
     }
 
-    fn lockable_decode_sync_ref_mut(&self) -> Self::RwLockWriteGuard<'_> {
+    fn lockable_decode_sync_ref_mut(&self) -> Self::MutexWriteGuard<'_> {
         self.blocking_write()
     }
 
     fn lockable_decode_async_ref<'a>(
         &'a self,
-    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::RwLockReadGuard<'a>> + Send + 'a>>
+    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::MutexReadGuard<'a>> + Send + 'a>>
     where
         Self: Sync + 'a,
     {
@@ -28391,7 +28391,7 @@ impl Lockable for AudioNodeImplementor {
 
     fn lockable_decode_async_ref_mut<'a>(
         &'a self,
-    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::RwLockWriteGuard<'a>> + Send + 'a>>
+    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::MutexWriteGuard<'a>> + Send + 'a>>
     where
         Self: Sync + 'a,
     {
@@ -28399,69 +28399,69 @@ impl Lockable for AudioNodeImplementor {
     }
 }
 
-pub enum AudioNodeImplementorRwLockReadGuard<'a> {
-    Variant0(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AnalyserNode>),
+pub enum AudioNodeImplementorMutexReadGuard<'a> {
+    Variant0(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AnalyserNode>),
     Variant1(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioBufferSourceNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioBufferSourceNode>,
     ),
     Variant2(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioDestinationNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioDestinationNode>,
     ),
-    Variant3(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioParam>),
-    Variant4(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioWorkletNode>),
-    Variant5(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, BiquadFilterNode>),
+    Variant3(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioParam>),
+    Variant4(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioWorkletNode>),
+    Variant5(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, BiquadFilterNode>),
     Variant6(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, ChannelMergerNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, ChannelMergerNode>,
     ),
     Variant7(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, ChannelSplitterNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, ChannelSplitterNode>,
     ),
     Variant8(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, ConstantSourceNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, ConstantSourceNode>,
     ),
-    Variant9(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, ConvolverNode>),
-    Variant10(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, DelayNode>),
+    Variant9(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, ConvolverNode>),
+    Variant10(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, DelayNode>),
     Variant11(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, DynamicsCompressorNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, DynamicsCompressorNode>,
     ),
-    Variant12(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, GainNode>),
-    Variant13(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, IIRFilterNode>),
+    Variant12(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, GainNode>),
+    Variant13(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, IIRFilterNode>),
     Variant14(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<
             'a,
             MediaElementAudioSourceNode,
         >,
     ),
     Variant15(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<
             'a,
             MediaStreamAudioDestinationNode,
         >,
     ),
     Variant16(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<
             'a,
             MediaStreamAudioSourceNode,
         >,
     ),
     Variant17(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<
             'a,
             MediaStreamTrackAudioSourceNode,
         >,
     ),
-    Variant18(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, OscillatorNode>),
-    Variant19(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, PannerNode>),
+    Variant18(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, OscillatorNode>),
+    Variant19(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, PannerNode>),
     Variant20(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, ScriptProcessorNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, ScriptProcessorNode>,
     ),
     Variant21(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, StereoPannerNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, StereoPannerNode>,
     ),
-    Variant22(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, WaveShaperNode>),
+    Variant22(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, WaveShaperNode>),
 }
 
-impl std::ops::Deref for AudioNodeImplementorRwLockReadGuard<'_> {
+impl std::ops::Deref for AudioNodeImplementorMutexReadGuard<'_> {
     type Target = dyn AudioNode;
 
     fn deref(&self) -> &Self::Target {
@@ -28493,76 +28493,76 @@ impl std::ops::Deref for AudioNodeImplementorRwLockReadGuard<'_> {
     }
 }
 
-pub enum AudioNodeImplementorRwLockWriteGuard<'a> {
-    Variant0(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AnalyserNode>),
+pub enum AudioNodeImplementorMutexWriteGuard<'a> {
+    Variant0(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AnalyserNode>),
     Variant1(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioBufferSourceNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioBufferSourceNode>,
     ),
     Variant2(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioDestinationNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioDestinationNode>,
     ),
-    Variant3(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioParam>),
+    Variant3(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioParam>),
     Variant4(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioWorkletNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioWorkletNode>,
     ),
     Variant5(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, BiquadFilterNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, BiquadFilterNode>,
     ),
     Variant6(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, ChannelMergerNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, ChannelMergerNode>,
     ),
     Variant7(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, ChannelSplitterNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, ChannelSplitterNode>,
     ),
     Variant8(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, ConstantSourceNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, ConstantSourceNode>,
     ),
-    Variant9(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, ConvolverNode>),
-    Variant10(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, DelayNode>),
+    Variant9(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, ConvolverNode>),
+    Variant10(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, DelayNode>),
     Variant11(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<
             'a,
             DynamicsCompressorNode,
         >,
     ),
-    Variant12(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, GainNode>),
-    Variant13(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, IIRFilterNode>),
+    Variant12(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, GainNode>),
+    Variant13(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, IIRFilterNode>),
     Variant14(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<
             'a,
             MediaElementAudioSourceNode,
         >,
     ),
     Variant15(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<
             'a,
             MediaStreamAudioDestinationNode,
         >,
     ),
     Variant16(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<
             'a,
             MediaStreamAudioSourceNode,
         >,
     ),
     Variant17(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<
             'a,
             MediaStreamTrackAudioSourceNode,
         >,
     ),
-    Variant18(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, OscillatorNode>),
-    Variant19(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, PannerNode>),
+    Variant18(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, OscillatorNode>),
+    Variant19(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, PannerNode>),
     Variant20(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, ScriptProcessorNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, ScriptProcessorNode>,
     ),
     Variant21(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, StereoPannerNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, StereoPannerNode>,
     ),
-    Variant22(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, WaveShaperNode>),
+    Variant22(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, WaveShaperNode>),
 }
 
-impl std::ops::Deref for AudioNodeImplementorRwLockWriteGuard<'_> {
+impl std::ops::Deref for AudioNodeImplementorMutexWriteGuard<'_> {
     type Target = dyn AudioNode;
 
     fn deref(&self) -> &Self::Target {
@@ -28594,7 +28594,7 @@ impl std::ops::Deref for AudioNodeImplementorRwLockWriteGuard<'_> {
     }
 }
 
-impl std::ops::DerefMut for AudioNodeImplementorRwLockWriteGuard<'_> {
+impl std::ops::DerefMut for AudioNodeImplementorMutexWriteGuard<'_> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         match self {
             Self::Variant0(inner) => inner.deref_mut(),
@@ -28666,87 +28666,87 @@ pub fn frb_internal_no_impl_dummy_function_Auto_Ref_RustOpaque_flutter_rust_brid
 }
 
 impl Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnum {
-    pub fn blocking_read(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard{
+    pub fn blocking_read(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard{
         match self {
-            Self::Variant0(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant0(inner.blocking_read()),
-Self::Variant1(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant1(inner.blocking_read()),
-Self::Variant2(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant2(inner.blocking_read()),
-Self::Variant3(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant3(inner.blocking_read()),
-Self::Variant4(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant4(inner.blocking_read()),
-Self::Variant5(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant5(inner.blocking_read()),
-Self::Variant6(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant6(inner.blocking_read()),
-Self::Variant7(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant7(inner.blocking_read()),
-Self::Variant8(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant8(inner.blocking_read()),
-Self::Variant9(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant9(inner.blocking_read()),
-Self::Variant10(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant10(inner.blocking_read()),
-Self::Variant11(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant11(inner.blocking_read()),
-Self::Variant12(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant12(inner.blocking_read()),
-Self::Variant13(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant13(inner.blocking_read()),
-Self::Variant14(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant14(inner.blocking_read()),
-Self::Variant15(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant15(inner.blocking_read()),
-Self::Variant16(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant16(inner.blocking_read()),
-Self::Variant17(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant17(inner.blocking_read()),
-Self::Variant18(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant18(inner.blocking_read()),
-Self::Variant19(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant19(inner.blocking_read()),
-Self::Variant20(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant20(inner.blocking_read()),
-Self::Variant21(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant21(inner.blocking_read()),
-Self::Variant22(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant22(inner.blocking_read()),
-Self::Variant23(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant23(inner.blocking_read()),
-Self::Variant24(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant24(inner.blocking_read()),
-Self::Variant25(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant25(inner.blocking_read()),
-Self::Variant26(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant26(inner.blocking_read()),
-Self::Variant27(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant27(inner.blocking_read()),
-Self::Variant28(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant28(inner.blocking_read()),
-Self::Variant29(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant29(inner.blocking_read()),
-Self::Variant30(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant30(inner.blocking_read()),
-Self::Variant31(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant31(inner.blocking_read()),
+            Self::Variant0(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant0(inner.blocking_read()),
+Self::Variant1(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant1(inner.blocking_read()),
+Self::Variant2(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant2(inner.blocking_read()),
+Self::Variant3(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant3(inner.blocking_read()),
+Self::Variant4(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant4(inner.blocking_read()),
+Self::Variant5(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant5(inner.blocking_read()),
+Self::Variant6(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant6(inner.blocking_read()),
+Self::Variant7(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant7(inner.blocking_read()),
+Self::Variant8(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant8(inner.blocking_read()),
+Self::Variant9(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant9(inner.blocking_read()),
+Self::Variant10(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant10(inner.blocking_read()),
+Self::Variant11(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant11(inner.blocking_read()),
+Self::Variant12(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant12(inner.blocking_read()),
+Self::Variant13(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant13(inner.blocking_read()),
+Self::Variant14(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant14(inner.blocking_read()),
+Self::Variant15(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant15(inner.blocking_read()),
+Self::Variant16(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant16(inner.blocking_read()),
+Self::Variant17(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant17(inner.blocking_read()),
+Self::Variant18(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant18(inner.blocking_read()),
+Self::Variant19(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant19(inner.blocking_read()),
+Self::Variant20(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant20(inner.blocking_read()),
+Self::Variant21(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant21(inner.blocking_read()),
+Self::Variant22(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant22(inner.blocking_read()),
+Self::Variant23(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant23(inner.blocking_read()),
+Self::Variant24(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant24(inner.blocking_read()),
+Self::Variant25(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant25(inner.blocking_read()),
+Self::Variant26(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant26(inner.blocking_read()),
+Self::Variant27(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant27(inner.blocking_read()),
+Self::Variant28(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant28(inner.blocking_read()),
+Self::Variant29(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant29(inner.blocking_read()),
+Self::Variant30(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant30(inner.blocking_read()),
+Self::Variant31(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant31(inner.blocking_read()),
 
         }
     }
 
-    pub fn blocking_write(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockWriteGuard{
+    pub fn blocking_write(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexWriteGuard{
         unreachable!()
     }
 
-    pub async fn read(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard{
+    pub async fn read(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard{
         match self {
-            Self::Variant0(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant0(inner.read().await),
-Self::Variant1(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant1(inner.read().await),
-Self::Variant2(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant2(inner.read().await),
-Self::Variant3(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant3(inner.read().await),
-Self::Variant4(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant4(inner.read().await),
-Self::Variant5(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant5(inner.read().await),
-Self::Variant6(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant6(inner.read().await),
-Self::Variant7(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant7(inner.read().await),
-Self::Variant8(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant8(inner.read().await),
-Self::Variant9(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant9(inner.read().await),
-Self::Variant10(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant10(inner.read().await),
-Self::Variant11(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant11(inner.read().await),
-Self::Variant12(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant12(inner.read().await),
-Self::Variant13(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant13(inner.read().await),
-Self::Variant14(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant14(inner.read().await),
-Self::Variant15(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant15(inner.read().await),
-Self::Variant16(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant16(inner.read().await),
-Self::Variant17(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant17(inner.read().await),
-Self::Variant18(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant18(inner.read().await),
-Self::Variant19(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant19(inner.read().await),
-Self::Variant20(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant20(inner.read().await),
-Self::Variant21(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant21(inner.read().await),
-Self::Variant22(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant22(inner.read().await),
-Self::Variant23(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant23(inner.read().await),
-Self::Variant24(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant24(inner.read().await),
-Self::Variant25(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant25(inner.read().await),
-Self::Variant26(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant26(inner.read().await),
-Self::Variant27(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant27(inner.read().await),
-Self::Variant28(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant28(inner.read().await),
-Self::Variant29(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant29(inner.read().await),
-Self::Variant30(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant30(inner.read().await),
-Self::Variant31(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard::Variant31(inner.read().await),
+            Self::Variant0(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant0(inner.read().await),
+Self::Variant1(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant1(inner.read().await),
+Self::Variant2(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant2(inner.read().await),
+Self::Variant3(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant3(inner.read().await),
+Self::Variant4(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant4(inner.read().await),
+Self::Variant5(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant5(inner.read().await),
+Self::Variant6(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant6(inner.read().await),
+Self::Variant7(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant7(inner.read().await),
+Self::Variant8(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant8(inner.read().await),
+Self::Variant9(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant9(inner.read().await),
+Self::Variant10(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant10(inner.read().await),
+Self::Variant11(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant11(inner.read().await),
+Self::Variant12(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant12(inner.read().await),
+Self::Variant13(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant13(inner.read().await),
+Self::Variant14(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant14(inner.read().await),
+Self::Variant15(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant15(inner.read().await),
+Self::Variant16(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant16(inner.read().await),
+Self::Variant17(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant17(inner.read().await),
+Self::Variant18(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant18(inner.read().await),
+Self::Variant19(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant19(inner.read().await),
+Self::Variant20(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant20(inner.read().await),
+Self::Variant21(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant21(inner.read().await),
+Self::Variant22(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant22(inner.read().await),
+Self::Variant23(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant23(inner.read().await),
+Self::Variant24(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant24(inner.read().await),
+Self::Variant25(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant25(inner.read().await),
+Self::Variant26(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant26(inner.read().await),
+Self::Variant27(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant27(inner.read().await),
+Self::Variant28(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant28(inner.read().await),
+Self::Variant29(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant29(inner.read().await),
+Self::Variant30(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant30(inner.read().await),
+Self::Variant31(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard::Variant31(inner.read().await),
 
         }
     }
 
-    pub async fn write(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockWriteGuard{
+    pub async fn write(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexWriteGuard{
         unreachable!()
     }
 }
@@ -28754,8 +28754,8 @@ Self::Variant31(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRu
 impl Lockable
     for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnum
 {
-    type RwLockReadGuard<'a> = Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard<'a>;
-    type RwLockWriteGuard<'a> = Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockWriteGuard<'a>;
+    type MutexReadGuard<'a> = Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard<'a>;
+    type MutexWriteGuard<'a> = Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexWriteGuard<'a>;
 
     fn lockable_order(&self) -> flutter_rust_bridge::for_generated::LockableOrder {
         match self {
@@ -28858,17 +28858,17 @@ impl Lockable
         }
     }
 
-    fn lockable_decode_sync_ref(&self) -> Self::RwLockReadGuard<'_> {
+    fn lockable_decode_sync_ref(&self) -> Self::MutexReadGuard<'_> {
         self.blocking_read()
     }
 
-    fn lockable_decode_sync_ref_mut(&self) -> Self::RwLockWriteGuard<'_> {
+    fn lockable_decode_sync_ref_mut(&self) -> Self::MutexWriteGuard<'_> {
         self.blocking_write()
     }
 
     fn lockable_decode_async_ref<'a>(
         &'a self,
-    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::RwLockReadGuard<'a>> + Send + 'a>>
+    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::MutexReadGuard<'a>> + Send + 'a>>
     where
         Self: Sync + 'a,
     {
@@ -28877,7 +28877,7 @@ impl Lockable
 
     fn lockable_decode_async_ref_mut<'a>(
         &'a self,
-    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::RwLockWriteGuard<'a>> + Send + 'a>>
+    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::MutexWriteGuard<'a>> + Send + 'a>>
     where
         Self: Sync + 'a,
     {
@@ -28885,70 +28885,70 @@ impl Lockable
     }
 }
 
-pub enum Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard<
+pub enum Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard<
     'a,
 > {
     Variant0(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioBufferSourceNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioBufferSourceNode>,
     ),
     Variant1(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioBufferSourceNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioBufferSourceNode>,
     ),
-    Variant2(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioListener>),
-    Variant3(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioListener>),
-    Variant4(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioListener>),
-    Variant5(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioListener>),
-    Variant6(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioListener>),
-    Variant7(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioListener>),
-    Variant8(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioListener>),
-    Variant9(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioListener>),
-    Variant10(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, AudioListener>),
+    Variant2(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioListener>),
+    Variant3(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioListener>),
+    Variant4(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioListener>),
+    Variant5(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioListener>),
+    Variant6(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioListener>),
+    Variant7(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioListener>),
+    Variant8(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioListener>),
+    Variant9(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioListener>),
+    Variant10(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, AudioListener>),
     Variant11(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, BiquadFilterNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, BiquadFilterNode>,
     ),
     Variant12(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, BiquadFilterNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, BiquadFilterNode>,
     ),
     Variant13(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, BiquadFilterNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, BiquadFilterNode>,
     ),
     Variant14(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, BiquadFilterNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, BiquadFilterNode>,
     ),
     Variant15(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, ConstantSourceNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, ConstantSourceNode>,
     ),
-    Variant16(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, DelayNode>),
+    Variant16(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, DelayNode>),
     Variant17(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, DynamicsCompressorNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, DynamicsCompressorNode>,
     ),
     Variant18(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, DynamicsCompressorNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, DynamicsCompressorNode>,
     ),
     Variant19(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, DynamicsCompressorNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, DynamicsCompressorNode>,
     ),
     Variant20(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, DynamicsCompressorNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, DynamicsCompressorNode>,
     ),
     Variant21(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, DynamicsCompressorNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, DynamicsCompressorNode>,
     ),
-    Variant22(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, GainNode>),
-    Variant23(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, OscillatorNode>),
-    Variant24(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, OscillatorNode>),
-    Variant25(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, PannerNode>),
-    Variant26(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, PannerNode>),
-    Variant27(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, PannerNode>),
-    Variant28(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, PannerNode>),
-    Variant29(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, PannerNode>),
-    Variant30(flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, PannerNode>),
+    Variant22(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, GainNode>),
+    Variant23(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, OscillatorNode>),
+    Variant24(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, OscillatorNode>),
+    Variant25(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, PannerNode>),
+    Variant26(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, PannerNode>),
+    Variant27(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, PannerNode>),
+    Variant28(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, PannerNode>),
+    Variant29(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, PannerNode>),
+    Variant30(flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, PannerNode>),
     Variant31(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<'a, StereoPannerNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<'a, StereoPannerNode>,
     ),
 }
 
-impl std::ops::Deref for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockReadGuard<'_> {
+impl std::ops::Deref for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexReadGuard<'_> {
             type Target = AudioParam;
 
             fn deref(&self) -> &Self::Target {
@@ -28990,85 +28990,85 @@ Self::Variant31(inner) => inner.deref().pan(),
             }
         }
 
-pub enum Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockWriteGuard<
+pub enum Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexWriteGuard<
     'a,
 > {
     Variant0(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioBufferSourceNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioBufferSourceNode>,
     ),
     Variant1(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioBufferSourceNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioBufferSourceNode>,
     ),
-    Variant2(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioListener>),
-    Variant3(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioListener>),
-    Variant4(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioListener>),
-    Variant5(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioListener>),
-    Variant6(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioListener>),
-    Variant7(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioListener>),
-    Variant8(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioListener>),
-    Variant9(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioListener>),
-    Variant10(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, AudioListener>),
+    Variant2(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioListener>),
+    Variant3(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioListener>),
+    Variant4(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioListener>),
+    Variant5(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioListener>),
+    Variant6(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioListener>),
+    Variant7(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioListener>),
+    Variant8(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioListener>),
+    Variant9(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioListener>),
+    Variant10(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, AudioListener>),
     Variant11(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, BiquadFilterNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, BiquadFilterNode>,
     ),
     Variant12(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, BiquadFilterNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, BiquadFilterNode>,
     ),
     Variant13(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, BiquadFilterNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, BiquadFilterNode>,
     ),
     Variant14(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, BiquadFilterNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, BiquadFilterNode>,
     ),
     Variant15(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, ConstantSourceNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, ConstantSourceNode>,
     ),
-    Variant16(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, DelayNode>),
+    Variant16(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, DelayNode>),
     Variant17(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<
             'a,
             DynamicsCompressorNode,
         >,
     ),
     Variant18(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<
             'a,
             DynamicsCompressorNode,
         >,
     ),
     Variant19(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<
             'a,
             DynamicsCompressorNode,
         >,
     ),
     Variant20(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<
             'a,
             DynamicsCompressorNode,
         >,
     ),
     Variant21(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<
             'a,
             DynamicsCompressorNode,
         >,
     ),
-    Variant22(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, GainNode>),
-    Variant23(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, OscillatorNode>),
-    Variant24(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, OscillatorNode>),
-    Variant25(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, PannerNode>),
-    Variant26(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, PannerNode>),
-    Variant27(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, PannerNode>),
-    Variant28(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, PannerNode>),
-    Variant29(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, PannerNode>),
-    Variant30(flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, PannerNode>),
+    Variant22(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, GainNode>),
+    Variant23(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, OscillatorNode>),
+    Variant24(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, OscillatorNode>),
+    Variant25(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, PannerNode>),
+    Variant26(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, PannerNode>),
+    Variant27(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, PannerNode>),
+    Variant28(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, PannerNode>),
+    Variant29(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, PannerNode>),
+    Variant30(flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, PannerNode>),
     Variant31(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<'a, StereoPannerNode>,
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<'a, StereoPannerNode>,
     ),
 }
 
-impl std::ops::Deref for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockWriteGuard<'_> {
+impl std::ops::Deref for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexWriteGuard<'_> {
             type Target = AudioParam;
 
             fn deref(&self) -> &Self::Target {
@@ -29110,7 +29110,7 @@ Self::Variant31(inner) => inner.deref().pan(),
             }
         }
 
-impl std::ops::DerefMut for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumRwLockWriteGuard<'_> {
+impl std::ops::DerefMut for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnumMutexWriteGuard<'_> {
                 fn deref_mut(&mut self) -> &mut Self::Target {
                     unreachable!()
                 }
@@ -29127,25 +29127,25 @@ pub fn frb_internal_no_impl_dummy_function_Auto_Ref_RustOpaque_flutter_rust_brid
 }
 
 impl Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnum {
-    pub fn blocking_read(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumRwLockReadGuard{
+    pub fn blocking_read(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumMutexReadGuard{
         match self {
-            Self::Variant0(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumRwLockReadGuard::Variant0(inner.blocking_read()),
+            Self::Variant0(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumMutexReadGuard::Variant0(inner.blocking_read()),
 
         }
     }
 
-    pub fn blocking_write(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumRwLockWriteGuard{
+    pub fn blocking_write(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumMutexWriteGuard{
         unreachable!()
     }
 
-    pub async fn read(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumRwLockReadGuard{
+    pub async fn read(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumMutexReadGuard{
         match self {
-            Self::Variant0(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumRwLockReadGuard::Variant0(inner.read().await),
+            Self::Variant0(inner) => Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumMutexReadGuard::Variant0(inner.read().await),
 
         }
     }
 
-    pub async fn write(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumRwLockWriteGuard{
+    pub async fn write(&self) -> Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumMutexWriteGuard{
         unreachable!()
     }
 }
@@ -29153,8 +29153,8 @@ impl Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMedi
 impl Lockable
     for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnum
 {
-    type RwLockReadGuard<'a> = Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumRwLockReadGuard<'a>;
-    type RwLockWriteGuard<'a> = Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumRwLockWriteGuard<'a>;
+    type MutexReadGuard<'a> = Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumMutexReadGuard<'a>;
+    type MutexWriteGuard<'a> = Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumMutexWriteGuard<'a>;
 
     fn lockable_order(&self) -> flutter_rust_bridge::for_generated::LockableOrder {
         match self {
@@ -29164,17 +29164,17 @@ impl Lockable
         }
     }
 
-    fn lockable_decode_sync_ref(&self) -> Self::RwLockReadGuard<'_> {
+    fn lockable_decode_sync_ref(&self) -> Self::MutexReadGuard<'_> {
         self.blocking_read()
     }
 
-    fn lockable_decode_sync_ref_mut(&self) -> Self::RwLockWriteGuard<'_> {
+    fn lockable_decode_sync_ref_mut(&self) -> Self::MutexWriteGuard<'_> {
         self.blocking_write()
     }
 
     fn lockable_decode_async_ref<'a>(
         &'a self,
-    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::RwLockReadGuard<'a>> + Send + 'a>>
+    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::MutexReadGuard<'a>> + Send + 'a>>
     where
         Self: Sync + 'a,
     {
@@ -29183,7 +29183,7 @@ impl Lockable
 
     fn lockable_decode_async_ref_mut<'a>(
         &'a self,
-    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::RwLockWriteGuard<'a>> + Send + 'a>>
+    ) -> std::pin::Pin<Box<dyn std::future::Future<Output = Self::MutexWriteGuard<'a>> + Send + 'a>>
     where
         Self: Sync + 'a,
     {
@@ -29191,18 +29191,18 @@ impl Lockable
     }
 }
 
-pub enum Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumRwLockReadGuard<
+pub enum Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumMutexReadGuard<
     'a,
 > {
     Variant0(
-        flutter_rust_bridge::for_generated::rust_async::RwLockReadGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexReadGuard<
             'a,
             MediaStreamAudioDestinationNode,
         >,
     ),
 }
 
-impl std::ops::Deref for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumRwLockReadGuard<'_> {
+impl std::ops::Deref for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumMutexReadGuard<'_> {
             type Target = MediaStream;
 
             fn deref(&self) -> &Self::Target {
@@ -29213,18 +29213,18 @@ impl std::ops::Deref for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRus
             }
         }
 
-pub enum Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumRwLockWriteGuard<
+pub enum Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumMutexWriteGuard<
     'a,
 > {
     Variant0(
-        flutter_rust_bridge::for_generated::rust_async::RwLockWriteGuard<
+        flutter_rust_bridge::for_generated::rust_async::MutexWriteGuard<
             'a,
             MediaStreamAudioDestinationNode,
         >,
     ),
 }
 
-impl std::ops::Deref for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumRwLockWriteGuard<'_> {
+impl std::ops::Deref for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumMutexWriteGuard<'_> {
             type Target = MediaStream;
 
             fn deref(&self) -> &Self::Target {
@@ -29235,7 +29235,7 @@ impl std::ops::Deref for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRus
             }
         }
 
-impl std::ops::DerefMut for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumRwLockWriteGuard<'_> {
+impl std::ops::DerefMut for Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnumMutexWriteGuard<'_> {
                 fn deref_mut(&mut self) -> &mut Self::Target {
                     unreachable!()
                 }

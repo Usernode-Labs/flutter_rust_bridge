@@ -4,7 +4,7 @@ use futures::channel::oneshot;
 use std::future::Future;
 use std::pin::Pin;
 use std::task::{Context, Poll};
-pub use tokio::sync::{RwLock, RwLockReadGuard, RwLockWriteGuard};
+pub use tokio::sync::{Mutex, MutexGuard};
 
 pub trait BaseAsyncRuntime {
     fn spawn<F>(&self, future: F)

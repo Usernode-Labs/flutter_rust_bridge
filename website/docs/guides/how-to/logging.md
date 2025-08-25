@@ -51,7 +51,7 @@ pub struct LogEntry {
 }
 
 // Simplified just for demonstration.
-// To compile, you need a OnceCell, or Mutex, or RwLock
+// To compile, you need a OnceCell, or Mutex, or Mutex
 // Also see https://github.com/fzyzcjy/flutter_rust_bridge/issues/398
 lazy_static! { static ref log_stream_sink: StreamSink<LogEntry>; }
 

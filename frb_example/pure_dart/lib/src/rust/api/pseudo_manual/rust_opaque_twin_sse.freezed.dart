@@ -22,7 +22,7 @@ mixin _$EnumOpaqueTwinSse {
     required TResult Function(I32 field0) primitive,
     required TResult Function(BoxDartDebugTwinSse field0) traitObj,
     required TResult Function(MutexHideDataTwinSse field0) mutex,
-    required TResult Function(RwLockHideDataTwinSse field0) rwLock,
+    required TResult Function(MutexHideDataTwinSse field0) Mutex,
     required TResult Function() nothing,
   }) =>
       throw _privateConstructorUsedError;
@@ -32,7 +32,7 @@ mixin _$EnumOpaqueTwinSse {
     TResult? Function(I32 field0)? primitive,
     TResult? Function(BoxDartDebugTwinSse field0)? traitObj,
     TResult? Function(MutexHideDataTwinSse field0)? mutex,
-    TResult? Function(RwLockHideDataTwinSse field0)? rwLock,
+    TResult? Function(MutexHideDataTwinSse field0)? Mutex,
     TResult? Function()? nothing,
   }) =>
       throw _privateConstructorUsedError;
@@ -42,7 +42,7 @@ mixin _$EnumOpaqueTwinSse {
     TResult Function(I32 field0)? primitive,
     TResult Function(BoxDartDebugTwinSse field0)? traitObj,
     TResult Function(MutexHideDataTwinSse field0)? mutex,
-    TResult Function(RwLockHideDataTwinSse field0)? rwLock,
+    TResult Function(MutexHideDataTwinSse field0)? Mutex,
     TResult Function()? nothing,
     required TResult orElse(),
   }) =>
@@ -53,7 +53,7 @@ mixin _$EnumOpaqueTwinSse {
     required TResult Function(EnumOpaqueTwinSse_Primitive value) primitive,
     required TResult Function(EnumOpaqueTwinSse_TraitObj value) traitObj,
     required TResult Function(EnumOpaqueTwinSse_Mutex value) mutex,
-    required TResult Function(EnumOpaqueTwinSse_RwLock value) rwLock,
+    required TResult Function(EnumOpaqueTwinSse_Mutex value) Mutex,
     required TResult Function(EnumOpaqueTwinSse_Nothing value) nothing,
   }) =>
       throw _privateConstructorUsedError;
@@ -63,7 +63,7 @@ mixin _$EnumOpaqueTwinSse {
     TResult? Function(EnumOpaqueTwinSse_Primitive value)? primitive,
     TResult? Function(EnumOpaqueTwinSse_TraitObj value)? traitObj,
     TResult? Function(EnumOpaqueTwinSse_Mutex value)? mutex,
-    TResult? Function(EnumOpaqueTwinSse_RwLock value)? rwLock,
+    TResult? Function(EnumOpaqueTwinSse_Mutex value)? Mutex,
     TResult? Function(EnumOpaqueTwinSse_Nothing value)? nothing,
   }) =>
       throw _privateConstructorUsedError;
@@ -73,7 +73,7 @@ mixin _$EnumOpaqueTwinSse {
     TResult Function(EnumOpaqueTwinSse_Primitive value)? primitive,
     TResult Function(EnumOpaqueTwinSse_TraitObj value)? traitObj,
     TResult Function(EnumOpaqueTwinSse_Mutex value)? mutex,
-    TResult Function(EnumOpaqueTwinSse_RwLock value)? rwLock,
+    TResult Function(EnumOpaqueTwinSse_Mutex value)? Mutex,
     TResult Function(EnumOpaqueTwinSse_Nothing value)? nothing,
     required TResult orElse(),
   }) =>
@@ -177,7 +177,7 @@ class _$EnumOpaqueTwinSse_StructImpl extends EnumOpaqueTwinSse_Struct {
     required TResult Function(I32 field0) primitive,
     required TResult Function(BoxDartDebugTwinSse field0) traitObj,
     required TResult Function(MutexHideDataTwinSse field0) mutex,
-    required TResult Function(RwLockHideDataTwinSse field0) rwLock,
+    required TResult Function(MutexHideDataTwinSse field0) Mutex,
     required TResult Function() nothing,
   }) {
     return struct(field0);
@@ -190,7 +190,7 @@ class _$EnumOpaqueTwinSse_StructImpl extends EnumOpaqueTwinSse_Struct {
     TResult? Function(I32 field0)? primitive,
     TResult? Function(BoxDartDebugTwinSse field0)? traitObj,
     TResult? Function(MutexHideDataTwinSse field0)? mutex,
-    TResult? Function(RwLockHideDataTwinSse field0)? rwLock,
+    TResult? Function(MutexHideDataTwinSse field0)? Mutex,
     TResult? Function()? nothing,
   }) {
     return struct?.call(field0);
@@ -203,7 +203,7 @@ class _$EnumOpaqueTwinSse_StructImpl extends EnumOpaqueTwinSse_Struct {
     TResult Function(I32 field0)? primitive,
     TResult Function(BoxDartDebugTwinSse field0)? traitObj,
     TResult Function(MutexHideDataTwinSse field0)? mutex,
-    TResult Function(RwLockHideDataTwinSse field0)? rwLock,
+    TResult Function(MutexHideDataTwinSse field0)? Mutex,
     TResult Function()? nothing,
     required TResult orElse(),
   }) {
@@ -220,7 +220,7 @@ class _$EnumOpaqueTwinSse_StructImpl extends EnumOpaqueTwinSse_Struct {
     required TResult Function(EnumOpaqueTwinSse_Primitive value) primitive,
     required TResult Function(EnumOpaqueTwinSse_TraitObj value) traitObj,
     required TResult Function(EnumOpaqueTwinSse_Mutex value) mutex,
-    required TResult Function(EnumOpaqueTwinSse_RwLock value) rwLock,
+    required TResult Function(EnumOpaqueTwinSse_Mutex value) Mutex,
     required TResult Function(EnumOpaqueTwinSse_Nothing value) nothing,
   }) {
     return struct(this);
@@ -233,7 +233,7 @@ class _$EnumOpaqueTwinSse_StructImpl extends EnumOpaqueTwinSse_Struct {
     TResult? Function(EnumOpaqueTwinSse_Primitive value)? primitive,
     TResult? Function(EnumOpaqueTwinSse_TraitObj value)? traitObj,
     TResult? Function(EnumOpaqueTwinSse_Mutex value)? mutex,
-    TResult? Function(EnumOpaqueTwinSse_RwLock value)? rwLock,
+    TResult? Function(EnumOpaqueTwinSse_Mutex value)? Mutex,
     TResult? Function(EnumOpaqueTwinSse_Nothing value)? nothing,
   }) {
     return struct?.call(this);
@@ -246,7 +246,7 @@ class _$EnumOpaqueTwinSse_StructImpl extends EnumOpaqueTwinSse_Struct {
     TResult Function(EnumOpaqueTwinSse_Primitive value)? primitive,
     TResult Function(EnumOpaqueTwinSse_TraitObj value)? traitObj,
     TResult Function(EnumOpaqueTwinSse_Mutex value)? mutex,
-    TResult Function(EnumOpaqueTwinSse_RwLock value)? rwLock,
+    TResult Function(EnumOpaqueTwinSse_Mutex value)? Mutex,
     TResult Function(EnumOpaqueTwinSse_Nothing value)? nothing,
     required TResult orElse(),
   }) {
@@ -347,7 +347,7 @@ class _$EnumOpaqueTwinSse_PrimitiveImpl extends EnumOpaqueTwinSse_Primitive {
     required TResult Function(I32 field0) primitive,
     required TResult Function(BoxDartDebugTwinSse field0) traitObj,
     required TResult Function(MutexHideDataTwinSse field0) mutex,
-    required TResult Function(RwLockHideDataTwinSse field0) rwLock,
+    required TResult Function(MutexHideDataTwinSse field0) Mutex,
     required TResult Function() nothing,
   }) {
     return primitive(field0);
@@ -360,7 +360,7 @@ class _$EnumOpaqueTwinSse_PrimitiveImpl extends EnumOpaqueTwinSse_Primitive {
     TResult? Function(I32 field0)? primitive,
     TResult? Function(BoxDartDebugTwinSse field0)? traitObj,
     TResult? Function(MutexHideDataTwinSse field0)? mutex,
-    TResult? Function(RwLockHideDataTwinSse field0)? rwLock,
+    TResult? Function(MutexHideDataTwinSse field0)? Mutex,
     TResult? Function()? nothing,
   }) {
     return primitive?.call(field0);
@@ -373,7 +373,7 @@ class _$EnumOpaqueTwinSse_PrimitiveImpl extends EnumOpaqueTwinSse_Primitive {
     TResult Function(I32 field0)? primitive,
     TResult Function(BoxDartDebugTwinSse field0)? traitObj,
     TResult Function(MutexHideDataTwinSse field0)? mutex,
-    TResult Function(RwLockHideDataTwinSse field0)? rwLock,
+    TResult Function(MutexHideDataTwinSse field0)? Mutex,
     TResult Function()? nothing,
     required TResult orElse(),
   }) {
@@ -390,7 +390,7 @@ class _$EnumOpaqueTwinSse_PrimitiveImpl extends EnumOpaqueTwinSse_Primitive {
     required TResult Function(EnumOpaqueTwinSse_Primitive value) primitive,
     required TResult Function(EnumOpaqueTwinSse_TraitObj value) traitObj,
     required TResult Function(EnumOpaqueTwinSse_Mutex value) mutex,
-    required TResult Function(EnumOpaqueTwinSse_RwLock value) rwLock,
+    required TResult Function(EnumOpaqueTwinSse_Mutex value) Mutex,
     required TResult Function(EnumOpaqueTwinSse_Nothing value) nothing,
   }) {
     return primitive(this);
@@ -403,7 +403,7 @@ class _$EnumOpaqueTwinSse_PrimitiveImpl extends EnumOpaqueTwinSse_Primitive {
     TResult? Function(EnumOpaqueTwinSse_Primitive value)? primitive,
     TResult? Function(EnumOpaqueTwinSse_TraitObj value)? traitObj,
     TResult? Function(EnumOpaqueTwinSse_Mutex value)? mutex,
-    TResult? Function(EnumOpaqueTwinSse_RwLock value)? rwLock,
+    TResult? Function(EnumOpaqueTwinSse_Mutex value)? Mutex,
     TResult? Function(EnumOpaqueTwinSse_Nothing value)? nothing,
   }) {
     return primitive?.call(this);
@@ -416,7 +416,7 @@ class _$EnumOpaqueTwinSse_PrimitiveImpl extends EnumOpaqueTwinSse_Primitive {
     TResult Function(EnumOpaqueTwinSse_Primitive value)? primitive,
     TResult Function(EnumOpaqueTwinSse_TraitObj value)? traitObj,
     TResult Function(EnumOpaqueTwinSse_Mutex value)? mutex,
-    TResult Function(EnumOpaqueTwinSse_RwLock value)? rwLock,
+    TResult Function(EnumOpaqueTwinSse_Mutex value)? Mutex,
     TResult Function(EnumOpaqueTwinSse_Nothing value)? nothing,
     required TResult orElse(),
   }) {
@@ -517,7 +517,7 @@ class _$EnumOpaqueTwinSse_TraitObjImpl extends EnumOpaqueTwinSse_TraitObj {
     required TResult Function(I32 field0) primitive,
     required TResult Function(BoxDartDebugTwinSse field0) traitObj,
     required TResult Function(MutexHideDataTwinSse field0) mutex,
-    required TResult Function(RwLockHideDataTwinSse field0) rwLock,
+    required TResult Function(MutexHideDataTwinSse field0) Mutex,
     required TResult Function() nothing,
   }) {
     return traitObj(field0);
@@ -530,7 +530,7 @@ class _$EnumOpaqueTwinSse_TraitObjImpl extends EnumOpaqueTwinSse_TraitObj {
     TResult? Function(I32 field0)? primitive,
     TResult? Function(BoxDartDebugTwinSse field0)? traitObj,
     TResult? Function(MutexHideDataTwinSse field0)? mutex,
-    TResult? Function(RwLockHideDataTwinSse field0)? rwLock,
+    TResult? Function(MutexHideDataTwinSse field0)? Mutex,
     TResult? Function()? nothing,
   }) {
     return traitObj?.call(field0);
@@ -543,7 +543,7 @@ class _$EnumOpaqueTwinSse_TraitObjImpl extends EnumOpaqueTwinSse_TraitObj {
     TResult Function(I32 field0)? primitive,
     TResult Function(BoxDartDebugTwinSse field0)? traitObj,
     TResult Function(MutexHideDataTwinSse field0)? mutex,
-    TResult Function(RwLockHideDataTwinSse field0)? rwLock,
+    TResult Function(MutexHideDataTwinSse field0)? Mutex,
     TResult Function()? nothing,
     required TResult orElse(),
   }) {
@@ -560,7 +560,7 @@ class _$EnumOpaqueTwinSse_TraitObjImpl extends EnumOpaqueTwinSse_TraitObj {
     required TResult Function(EnumOpaqueTwinSse_Primitive value) primitive,
     required TResult Function(EnumOpaqueTwinSse_TraitObj value) traitObj,
     required TResult Function(EnumOpaqueTwinSse_Mutex value) mutex,
-    required TResult Function(EnumOpaqueTwinSse_RwLock value) rwLock,
+    required TResult Function(EnumOpaqueTwinSse_Mutex value) Mutex,
     required TResult Function(EnumOpaqueTwinSse_Nothing value) nothing,
   }) {
     return traitObj(this);
@@ -573,7 +573,7 @@ class _$EnumOpaqueTwinSse_TraitObjImpl extends EnumOpaqueTwinSse_TraitObj {
     TResult? Function(EnumOpaqueTwinSse_Primitive value)? primitive,
     TResult? Function(EnumOpaqueTwinSse_TraitObj value)? traitObj,
     TResult? Function(EnumOpaqueTwinSse_Mutex value)? mutex,
-    TResult? Function(EnumOpaqueTwinSse_RwLock value)? rwLock,
+    TResult? Function(EnumOpaqueTwinSse_Mutex value)? Mutex,
     TResult? Function(EnumOpaqueTwinSse_Nothing value)? nothing,
   }) {
     return traitObj?.call(this);
@@ -586,7 +586,7 @@ class _$EnumOpaqueTwinSse_TraitObjImpl extends EnumOpaqueTwinSse_TraitObj {
     TResult Function(EnumOpaqueTwinSse_Primitive value)? primitive,
     TResult Function(EnumOpaqueTwinSse_TraitObj value)? traitObj,
     TResult Function(EnumOpaqueTwinSse_Mutex value)? mutex,
-    TResult Function(EnumOpaqueTwinSse_RwLock value)? rwLock,
+    TResult Function(EnumOpaqueTwinSse_Mutex value)? Mutex,
     TResult Function(EnumOpaqueTwinSse_Nothing value)? nothing,
     required TResult orElse(),
   }) {
@@ -686,7 +686,7 @@ class _$EnumOpaqueTwinSse_MutexImpl extends EnumOpaqueTwinSse_Mutex {
     required TResult Function(I32 field0) primitive,
     required TResult Function(BoxDartDebugTwinSse field0) traitObj,
     required TResult Function(MutexHideDataTwinSse field0) mutex,
-    required TResult Function(RwLockHideDataTwinSse field0) rwLock,
+    required TResult Function(MutexHideDataTwinSse field0) Mutex,
     required TResult Function() nothing,
   }) {
     return mutex(field0);
@@ -699,7 +699,7 @@ class _$EnumOpaqueTwinSse_MutexImpl extends EnumOpaqueTwinSse_Mutex {
     TResult? Function(I32 field0)? primitive,
     TResult? Function(BoxDartDebugTwinSse field0)? traitObj,
     TResult? Function(MutexHideDataTwinSse field0)? mutex,
-    TResult? Function(RwLockHideDataTwinSse field0)? rwLock,
+    TResult? Function(MutexHideDataTwinSse field0)? Mutex,
     TResult? Function()? nothing,
   }) {
     return mutex?.call(field0);
@@ -712,7 +712,7 @@ class _$EnumOpaqueTwinSse_MutexImpl extends EnumOpaqueTwinSse_Mutex {
     TResult Function(I32 field0)? primitive,
     TResult Function(BoxDartDebugTwinSse field0)? traitObj,
     TResult Function(MutexHideDataTwinSse field0)? mutex,
-    TResult Function(RwLockHideDataTwinSse field0)? rwLock,
+    TResult Function(MutexHideDataTwinSse field0)? Mutex,
     TResult Function()? nothing,
     required TResult orElse(),
   }) {
@@ -729,7 +729,7 @@ class _$EnumOpaqueTwinSse_MutexImpl extends EnumOpaqueTwinSse_Mutex {
     required TResult Function(EnumOpaqueTwinSse_Primitive value) primitive,
     required TResult Function(EnumOpaqueTwinSse_TraitObj value) traitObj,
     required TResult Function(EnumOpaqueTwinSse_Mutex value) mutex,
-    required TResult Function(EnumOpaqueTwinSse_RwLock value) rwLock,
+    required TResult Function(EnumOpaqueTwinSse_Mutex value) Mutex,
     required TResult Function(EnumOpaqueTwinSse_Nothing value) nothing,
   }) {
     return mutex(this);
@@ -742,7 +742,7 @@ class _$EnumOpaqueTwinSse_MutexImpl extends EnumOpaqueTwinSse_Mutex {
     TResult? Function(EnumOpaqueTwinSse_Primitive value)? primitive,
     TResult? Function(EnumOpaqueTwinSse_TraitObj value)? traitObj,
     TResult? Function(EnumOpaqueTwinSse_Mutex value)? mutex,
-    TResult? Function(EnumOpaqueTwinSse_RwLock value)? rwLock,
+    TResult? Function(EnumOpaqueTwinSse_Mutex value)? Mutex,
     TResult? Function(EnumOpaqueTwinSse_Nothing value)? nothing,
   }) {
     return mutex?.call(this);
@@ -755,7 +755,7 @@ class _$EnumOpaqueTwinSse_MutexImpl extends EnumOpaqueTwinSse_Mutex {
     TResult Function(EnumOpaqueTwinSse_Primitive value)? primitive,
     TResult Function(EnumOpaqueTwinSse_TraitObj value)? traitObj,
     TResult Function(EnumOpaqueTwinSse_Mutex value)? mutex,
-    TResult Function(EnumOpaqueTwinSse_RwLock value)? rwLock,
+    TResult Function(EnumOpaqueTwinSse_Mutex value)? Mutex,
     TResult Function(EnumOpaqueTwinSse_Nothing value)? nothing,
     required TResult orElse(),
   }) {
@@ -781,23 +781,23 @@ abstract class EnumOpaqueTwinSse_Mutex extends EnumOpaqueTwinSse {
 }
 
 /// @nodoc
-abstract class _$$EnumOpaqueTwinSse_RwLockImplCopyWith<$Res> {
-  factory _$$EnumOpaqueTwinSse_RwLockImplCopyWith(
-          _$EnumOpaqueTwinSse_RwLockImpl value,
-          $Res Function(_$EnumOpaqueTwinSse_RwLockImpl) then) =
-      __$$EnumOpaqueTwinSse_RwLockImplCopyWithImpl<$Res>;
+abstract class _$$EnumOpaqueTwinSse_MutexImplCopyWith<$Res> {
+  factory _$$EnumOpaqueTwinSse_MutexImplCopyWith(
+          _$EnumOpaqueTwinSse_MutexImpl value,
+          $Res Function(_$EnumOpaqueTwinSse_MutexImpl) then) =
+      __$$EnumOpaqueTwinSse_MutexImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({RwLockHideDataTwinSse field0});
+  $Res call({MutexHideDataTwinSse field0});
 }
 
 /// @nodoc
-class __$$EnumOpaqueTwinSse_RwLockImplCopyWithImpl<$Res>
+class __$$EnumOpaqueTwinSse_MutexImplCopyWithImpl<$Res>
     extends _$EnumOpaqueTwinSseCopyWithImpl<$Res,
-        _$EnumOpaqueTwinSse_RwLockImpl>
-    implements _$$EnumOpaqueTwinSse_RwLockImplCopyWith<$Res> {
-  __$$EnumOpaqueTwinSse_RwLockImplCopyWithImpl(
-      _$EnumOpaqueTwinSse_RwLockImpl _value,
-      $Res Function(_$EnumOpaqueTwinSse_RwLockImpl) _then)
+        _$EnumOpaqueTwinSse_MutexImpl>
+    implements _$$EnumOpaqueTwinSse_MutexImplCopyWith<$Res> {
+  __$$EnumOpaqueTwinSse_MutexImplCopyWithImpl(
+      _$EnumOpaqueTwinSse_MutexImpl _value,
+      $Res Function(_$EnumOpaqueTwinSse_MutexImpl) _then)
       : super(_value, _then);
 
   /// Create a copy of EnumOpaqueTwinSse
@@ -807,33 +807,33 @@ class __$$EnumOpaqueTwinSse_RwLockImplCopyWithImpl<$Res>
   $Res call({
     Object? field0 = null,
   }) {
-    return _then(_$EnumOpaqueTwinSse_RwLockImpl(
+    return _then(_$EnumOpaqueTwinSse_MutexImpl(
       null == field0
           ? _value.field0
           : field0 // ignore: cast_nullable_to_non_nullable
-              as RwLockHideDataTwinSse,
+              as MutexHideDataTwinSse,
     ));
   }
 }
 
 /// @nodoc
 
-class _$EnumOpaqueTwinSse_RwLockImpl extends EnumOpaqueTwinSse_RwLock {
-  const _$EnumOpaqueTwinSse_RwLockImpl(this.field0) : super._();
+class _$EnumOpaqueTwinSse_MutexImpl extends EnumOpaqueTwinSse_Mutex {
+  const _$EnumOpaqueTwinSse_MutexImpl(this.field0) : super._();
 
   @override
-  final RwLockHideDataTwinSse field0;
+  final MutexHideDataTwinSse field0;
 
   @override
   String toString() {
-    return 'EnumOpaqueTwinSse.rwLock(field0: $field0)';
+    return 'EnumOpaqueTwinSse.Mutex(field0: $field0)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$EnumOpaqueTwinSse_RwLockImpl &&
+            other is _$EnumOpaqueTwinSse_MutexImpl &&
             (identical(other.field0, field0) || other.field0 == field0));
   }
 
@@ -845,9 +845,9 @@ class _$EnumOpaqueTwinSse_RwLockImpl extends EnumOpaqueTwinSse_RwLock {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$EnumOpaqueTwinSse_RwLockImplCopyWith<_$EnumOpaqueTwinSse_RwLockImpl>
-      get copyWith => __$$EnumOpaqueTwinSse_RwLockImplCopyWithImpl<
-          _$EnumOpaqueTwinSse_RwLockImpl>(this, _$identity);
+  _$$EnumOpaqueTwinSse_MutexImplCopyWith<_$EnumOpaqueTwinSse_MutexImpl>
+      get copyWith => __$$EnumOpaqueTwinSse_MutexImplCopyWithImpl<
+          _$EnumOpaqueTwinSse_MutexImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -856,10 +856,10 @@ class _$EnumOpaqueTwinSse_RwLockImpl extends EnumOpaqueTwinSse_RwLock {
     required TResult Function(I32 field0) primitive,
     required TResult Function(BoxDartDebugTwinSse field0) traitObj,
     required TResult Function(MutexHideDataTwinSse field0) mutex,
-    required TResult Function(RwLockHideDataTwinSse field0) rwLock,
+    required TResult Function(MutexHideDataTwinSse field0) Mutex,
     required TResult Function() nothing,
   }) {
-    return rwLock(field0);
+    return Mutex(field0);
   }
 
   @override
@@ -869,10 +869,10 @@ class _$EnumOpaqueTwinSse_RwLockImpl extends EnumOpaqueTwinSse_RwLock {
     TResult? Function(I32 field0)? primitive,
     TResult? Function(BoxDartDebugTwinSse field0)? traitObj,
     TResult? Function(MutexHideDataTwinSse field0)? mutex,
-    TResult? Function(RwLockHideDataTwinSse field0)? rwLock,
+    TResult? Function(MutexHideDataTwinSse field0)? Mutex,
     TResult? Function()? nothing,
   }) {
-    return rwLock?.call(field0);
+    return Mutex?.call(field0);
   }
 
   @override
@@ -882,12 +882,12 @@ class _$EnumOpaqueTwinSse_RwLockImpl extends EnumOpaqueTwinSse_RwLock {
     TResult Function(I32 field0)? primitive,
     TResult Function(BoxDartDebugTwinSse field0)? traitObj,
     TResult Function(MutexHideDataTwinSse field0)? mutex,
-    TResult Function(RwLockHideDataTwinSse field0)? rwLock,
+    TResult Function(MutexHideDataTwinSse field0)? Mutex,
     TResult Function()? nothing,
     required TResult orElse(),
   }) {
-    if (rwLock != null) {
-      return rwLock(field0);
+    if (Mutex != null) {
+      return Mutex(field0);
     }
     return orElse();
   }
@@ -899,10 +899,10 @@ class _$EnumOpaqueTwinSse_RwLockImpl extends EnumOpaqueTwinSse_RwLock {
     required TResult Function(EnumOpaqueTwinSse_Primitive value) primitive,
     required TResult Function(EnumOpaqueTwinSse_TraitObj value) traitObj,
     required TResult Function(EnumOpaqueTwinSse_Mutex value) mutex,
-    required TResult Function(EnumOpaqueTwinSse_RwLock value) rwLock,
+    required TResult Function(EnumOpaqueTwinSse_Mutex value) Mutex,
     required TResult Function(EnumOpaqueTwinSse_Nothing value) nothing,
   }) {
-    return rwLock(this);
+    return Mutex(this);
   }
 
   @override
@@ -912,10 +912,10 @@ class _$EnumOpaqueTwinSse_RwLockImpl extends EnumOpaqueTwinSse_RwLock {
     TResult? Function(EnumOpaqueTwinSse_Primitive value)? primitive,
     TResult? Function(EnumOpaqueTwinSse_TraitObj value)? traitObj,
     TResult? Function(EnumOpaqueTwinSse_Mutex value)? mutex,
-    TResult? Function(EnumOpaqueTwinSse_RwLock value)? rwLock,
+    TResult? Function(EnumOpaqueTwinSse_Mutex value)? Mutex,
     TResult? Function(EnumOpaqueTwinSse_Nothing value)? nothing,
   }) {
-    return rwLock?.call(this);
+    return Mutex?.call(this);
   }
 
   @override
@@ -925,28 +925,28 @@ class _$EnumOpaqueTwinSse_RwLockImpl extends EnumOpaqueTwinSse_RwLock {
     TResult Function(EnumOpaqueTwinSse_Primitive value)? primitive,
     TResult Function(EnumOpaqueTwinSse_TraitObj value)? traitObj,
     TResult Function(EnumOpaqueTwinSse_Mutex value)? mutex,
-    TResult Function(EnumOpaqueTwinSse_RwLock value)? rwLock,
+    TResult Function(EnumOpaqueTwinSse_Mutex value)? Mutex,
     TResult Function(EnumOpaqueTwinSse_Nothing value)? nothing,
     required TResult orElse(),
   }) {
-    if (rwLock != null) {
-      return rwLock(this);
+    if (Mutex != null) {
+      return Mutex(this);
     }
     return orElse();
   }
 }
 
-abstract class EnumOpaqueTwinSse_RwLock extends EnumOpaqueTwinSse {
-  const factory EnumOpaqueTwinSse_RwLock(final RwLockHideDataTwinSse field0) =
-      _$EnumOpaqueTwinSse_RwLockImpl;
-  const EnumOpaqueTwinSse_RwLock._() : super._();
+abstract class EnumOpaqueTwinSse_Mutex extends EnumOpaqueTwinSse {
+  const factory EnumOpaqueTwinSse_Mutex(final MutexHideDataTwinSse field0) =
+      _$EnumOpaqueTwinSse_MutexImpl;
+  const EnumOpaqueTwinSse_Mutex._() : super._();
 
-  RwLockHideDataTwinSse get field0;
+  MutexHideDataTwinSse get field0;
 
   /// Create a copy of EnumOpaqueTwinSse
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$EnumOpaqueTwinSse_RwLockImplCopyWith<_$EnumOpaqueTwinSse_RwLockImpl>
+  _$$EnumOpaqueTwinSse_MutexImplCopyWith<_$EnumOpaqueTwinSse_MutexImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -999,7 +999,7 @@ class _$EnumOpaqueTwinSse_NothingImpl extends EnumOpaqueTwinSse_Nothing {
     required TResult Function(I32 field0) primitive,
     required TResult Function(BoxDartDebugTwinSse field0) traitObj,
     required TResult Function(MutexHideDataTwinSse field0) mutex,
-    required TResult Function(RwLockHideDataTwinSse field0) rwLock,
+    required TResult Function(MutexHideDataTwinSse field0) Mutex,
     required TResult Function() nothing,
   }) {
     return nothing();
@@ -1012,7 +1012,7 @@ class _$EnumOpaqueTwinSse_NothingImpl extends EnumOpaqueTwinSse_Nothing {
     TResult? Function(I32 field0)? primitive,
     TResult? Function(BoxDartDebugTwinSse field0)? traitObj,
     TResult? Function(MutexHideDataTwinSse field0)? mutex,
-    TResult? Function(RwLockHideDataTwinSse field0)? rwLock,
+    TResult? Function(MutexHideDataTwinSse field0)? Mutex,
     TResult? Function()? nothing,
   }) {
     return nothing?.call();
@@ -1025,7 +1025,7 @@ class _$EnumOpaqueTwinSse_NothingImpl extends EnumOpaqueTwinSse_Nothing {
     TResult Function(I32 field0)? primitive,
     TResult Function(BoxDartDebugTwinSse field0)? traitObj,
     TResult Function(MutexHideDataTwinSse field0)? mutex,
-    TResult Function(RwLockHideDataTwinSse field0)? rwLock,
+    TResult Function(MutexHideDataTwinSse field0)? Mutex,
     TResult Function()? nothing,
     required TResult orElse(),
   }) {
@@ -1042,7 +1042,7 @@ class _$EnumOpaqueTwinSse_NothingImpl extends EnumOpaqueTwinSse_Nothing {
     required TResult Function(EnumOpaqueTwinSse_Primitive value) primitive,
     required TResult Function(EnumOpaqueTwinSse_TraitObj value) traitObj,
     required TResult Function(EnumOpaqueTwinSse_Mutex value) mutex,
-    required TResult Function(EnumOpaqueTwinSse_RwLock value) rwLock,
+    required TResult Function(EnumOpaqueTwinSse_Mutex value) Mutex,
     required TResult Function(EnumOpaqueTwinSse_Nothing value) nothing,
   }) {
     return nothing(this);
@@ -1055,7 +1055,7 @@ class _$EnumOpaqueTwinSse_NothingImpl extends EnumOpaqueTwinSse_Nothing {
     TResult? Function(EnumOpaqueTwinSse_Primitive value)? primitive,
     TResult? Function(EnumOpaqueTwinSse_TraitObj value)? traitObj,
     TResult? Function(EnumOpaqueTwinSse_Mutex value)? mutex,
-    TResult? Function(EnumOpaqueTwinSse_RwLock value)? rwLock,
+    TResult? Function(EnumOpaqueTwinSse_Mutex value)? Mutex,
     TResult? Function(EnumOpaqueTwinSse_Nothing value)? nothing,
   }) {
     return nothing?.call(this);
@@ -1068,7 +1068,7 @@ class _$EnumOpaqueTwinSse_NothingImpl extends EnumOpaqueTwinSse_Nothing {
     TResult Function(EnumOpaqueTwinSse_Primitive value)? primitive,
     TResult Function(EnumOpaqueTwinSse_TraitObj value)? traitObj,
     TResult Function(EnumOpaqueTwinSse_Mutex value)? mutex,
-    TResult Function(EnumOpaqueTwinSse_RwLock value)? rwLock,
+    TResult Function(EnumOpaqueTwinSse_Mutex value)? Mutex,
     TResult Function(EnumOpaqueTwinSse_Nothing value)? nothing,
     required TResult orElse(),
   }) {

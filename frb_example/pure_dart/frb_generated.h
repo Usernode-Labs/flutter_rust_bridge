@@ -1845,16 +1845,16 @@ typedef struct wire_cst_EnumOpaqueTwinMoi_Mutex {
   uintptr_t field0;
 } wire_cst_EnumOpaqueTwinMoi_Mutex;
 
-typedef struct wire_cst_EnumOpaqueTwinMoi_RwLock {
+typedef struct wire_cst_EnumOpaqueTwinMoi_Mutex {
   uintptr_t field0;
-} wire_cst_EnumOpaqueTwinMoi_RwLock;
+} wire_cst_EnumOpaqueTwinMoi_Mutex;
 
 typedef union EnumOpaqueTwinMoiKind {
   struct wire_cst_EnumOpaqueTwinMoi_Struct Struct;
   struct wire_cst_EnumOpaqueTwinMoi_Primitive Primitive;
   struct wire_cst_EnumOpaqueTwinMoi_TraitObj TraitObj;
   struct wire_cst_EnumOpaqueTwinMoi_Mutex Mutex;
-  struct wire_cst_EnumOpaqueTwinMoi_RwLock RwLock;
+  struct wire_cst_EnumOpaqueTwinMoi_Mutex Mutex;
 } EnumOpaqueTwinMoiKind;
 
 typedef struct wire_cst_enum_opaque_twin_moi {
@@ -1878,16 +1878,16 @@ typedef struct wire_cst_EnumOpaqueTwinNormal_Mutex {
   uintptr_t field0;
 } wire_cst_EnumOpaqueTwinNormal_Mutex;
 
-typedef struct wire_cst_EnumOpaqueTwinNormal_RwLock {
+typedef struct wire_cst_EnumOpaqueTwinNormal_Mutex {
   uintptr_t field0;
-} wire_cst_EnumOpaqueTwinNormal_RwLock;
+} wire_cst_EnumOpaqueTwinNormal_Mutex;
 
 typedef union EnumOpaqueTwinNormalKind {
   struct wire_cst_EnumOpaqueTwinNormal_Struct Struct;
   struct wire_cst_EnumOpaqueTwinNormal_Primitive Primitive;
   struct wire_cst_EnumOpaqueTwinNormal_TraitObj TraitObj;
   struct wire_cst_EnumOpaqueTwinNormal_Mutex Mutex;
-  struct wire_cst_EnumOpaqueTwinNormal_RwLock RwLock;
+  struct wire_cst_EnumOpaqueTwinNormal_Mutex Mutex;
 } EnumOpaqueTwinNormalKind;
 
 typedef struct wire_cst_enum_opaque_twin_normal {
@@ -1911,16 +1911,16 @@ typedef struct wire_cst_EnumOpaqueTwinRustAsync_Mutex {
   uintptr_t field0;
 } wire_cst_EnumOpaqueTwinRustAsync_Mutex;
 
-typedef struct wire_cst_EnumOpaqueTwinRustAsync_RwLock {
+typedef struct wire_cst_EnumOpaqueTwinRustAsync_Mutex {
   uintptr_t field0;
-} wire_cst_EnumOpaqueTwinRustAsync_RwLock;
+} wire_cst_EnumOpaqueTwinRustAsync_Mutex;
 
 typedef union EnumOpaqueTwinRustAsyncKind {
   struct wire_cst_EnumOpaqueTwinRustAsync_Struct Struct;
   struct wire_cst_EnumOpaqueTwinRustAsync_Primitive Primitive;
   struct wire_cst_EnumOpaqueTwinRustAsync_TraitObj TraitObj;
   struct wire_cst_EnumOpaqueTwinRustAsync_Mutex Mutex;
-  struct wire_cst_EnumOpaqueTwinRustAsync_RwLock RwLock;
+  struct wire_cst_EnumOpaqueTwinRustAsync_Mutex Mutex;
 } EnumOpaqueTwinRustAsyncKind;
 
 typedef struct wire_cst_enum_opaque_twin_rust_async {
@@ -1944,16 +1944,16 @@ typedef struct wire_cst_EnumOpaqueTwinRustAsyncMoi_Mutex {
   uintptr_t field0;
 } wire_cst_EnumOpaqueTwinRustAsyncMoi_Mutex;
 
-typedef struct wire_cst_EnumOpaqueTwinRustAsyncMoi_RwLock {
+typedef struct wire_cst_EnumOpaqueTwinRustAsyncMoi_Mutex {
   uintptr_t field0;
-} wire_cst_EnumOpaqueTwinRustAsyncMoi_RwLock;
+} wire_cst_EnumOpaqueTwinRustAsyncMoi_Mutex;
 
 typedef union EnumOpaqueTwinRustAsyncMoiKind {
   struct wire_cst_EnumOpaqueTwinRustAsyncMoi_Struct Struct;
   struct wire_cst_EnumOpaqueTwinRustAsyncMoi_Primitive Primitive;
   struct wire_cst_EnumOpaqueTwinRustAsyncMoi_TraitObj TraitObj;
   struct wire_cst_EnumOpaqueTwinRustAsyncMoi_Mutex Mutex;
-  struct wire_cst_EnumOpaqueTwinRustAsyncMoi_RwLock RwLock;
+  struct wire_cst_EnumOpaqueTwinRustAsyncMoi_Mutex Mutex;
 } EnumOpaqueTwinRustAsyncMoiKind;
 
 typedef struct wire_cst_enum_opaque_twin_rust_async_moi {
@@ -1977,16 +1977,16 @@ typedef struct wire_cst_EnumOpaqueTwinSync_Mutex {
   uintptr_t field0;
 } wire_cst_EnumOpaqueTwinSync_Mutex;
 
-typedef struct wire_cst_EnumOpaqueTwinSync_RwLock {
+typedef struct wire_cst_EnumOpaqueTwinSync_Mutex {
   uintptr_t field0;
-} wire_cst_EnumOpaqueTwinSync_RwLock;
+} wire_cst_EnumOpaqueTwinSync_Mutex;
 
 typedef union EnumOpaqueTwinSyncKind {
   struct wire_cst_EnumOpaqueTwinSync_Struct Struct;
   struct wire_cst_EnumOpaqueTwinSync_Primitive Primitive;
   struct wire_cst_EnumOpaqueTwinSync_TraitObj TraitObj;
   struct wire_cst_EnumOpaqueTwinSync_Mutex Mutex;
-  struct wire_cst_EnumOpaqueTwinSync_RwLock RwLock;
+  struct wire_cst_EnumOpaqueTwinSync_Mutex Mutex;
 } EnumOpaqueTwinSyncKind;
 
 typedef struct wire_cst_enum_opaque_twin_sync {
@@ -2010,16 +2010,16 @@ typedef struct wire_cst_EnumOpaqueTwinSyncMoi_Mutex {
   uintptr_t field0;
 } wire_cst_EnumOpaqueTwinSyncMoi_Mutex;
 
-typedef struct wire_cst_EnumOpaqueTwinSyncMoi_RwLock {
+typedef struct wire_cst_EnumOpaqueTwinSyncMoi_Mutex {
   uintptr_t field0;
-} wire_cst_EnumOpaqueTwinSyncMoi_RwLock;
+} wire_cst_EnumOpaqueTwinSyncMoi_Mutex;
 
 typedef union EnumOpaqueTwinSyncMoiKind {
   struct wire_cst_EnumOpaqueTwinSyncMoi_Struct Struct;
   struct wire_cst_EnumOpaqueTwinSyncMoi_Primitive Primitive;
   struct wire_cst_EnumOpaqueTwinSyncMoi_TraitObj TraitObj;
   struct wire_cst_EnumOpaqueTwinSyncMoi_Mutex Mutex;
-  struct wire_cst_EnumOpaqueTwinSyncMoi_RwLock RwLock;
+  struct wire_cst_EnumOpaqueTwinSyncMoi_Mutex Mutex;
 } EnumOpaqueTwinSyncMoiKind;
 
 typedef struct wire_cst_enum_opaque_twin_sync_moi {
@@ -14004,53 +14004,53 @@ void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_Non
 
 void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_NonCloneDataTwinSyncSseMoi(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinMoi(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinMoi(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinMoi(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinMoi(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinNormal(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinNormal(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinNormal(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinNormal(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsync(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsync(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsync(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsync(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncMoi(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncMoi(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncMoi(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncMoi(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSse(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSse(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSse(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSse(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSseMoi(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSseMoi(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSseMoi(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSseMoi(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSse(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSse(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSse(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSse(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSseMoi(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSseMoi(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSseMoi(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSseMoi(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSync(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSync(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSync(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSync(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncMoi(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncMoi(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncMoi(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncMoi(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncSse(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncSse(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncSse(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncSse(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncSseMoi(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncSseMoi(const void *ptr);
 
-void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncSseMoi(const void *ptr);
+void frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncSseMoi(const void *ptr);
 
 void frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBoxdynAnySendSyncstatic(const void *ptr);
 
@@ -15992,18 +15992,18 @@ static int64_t dummy_method_to_enforce_bundling(void) {
     dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_NonCloneDataTwinSyncMoi);
     dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_NonCloneDataTwinSyncSse);
     dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_NonCloneDataTwinSyncSseMoi);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinMoi);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinNormal);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsync);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncMoi);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSse);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSseMoi);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSse);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSseMoi);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSync);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncMoi);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncSse);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncSseMoi);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinMoi);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinNormal);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsync);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncMoi);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSse);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSseMoi);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSse);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSseMoi);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSync);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncMoi);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncSse);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncSseMoi);
     dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBoxdynAnySendSyncstatic);
     dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBoxdynFnStringStringSendSync);
     dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBoxdynMyTraitTwinMoiSendSync);
@@ -16221,18 +16221,18 @@ static int64_t dummy_method_to_enforce_bundling(void) {
     dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_NonCloneDataTwinSyncMoi);
     dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_NonCloneDataTwinSyncSse);
     dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_NonCloneDataTwinSyncSseMoi);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinMoi);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinNormal);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsync);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncMoi);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSse);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSseMoi);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSse);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSseMoi);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSync);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncMoi);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncSse);
-    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncSseMoi);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinMoi);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinNormal);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsync);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncMoi);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSse);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSseMoi);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSse);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSseMoi);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSync);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncMoi);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncSse);
+    dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncSseMoi);
     dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBoxdynAnySendSyncstatic);
     dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBoxdynFnStringStringSendSync);
     dummy_var ^= ((int64_t) (void*) frbgen_frb_example_pure_dart_rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBoxdynMyTraitTwinMoiSendSync);

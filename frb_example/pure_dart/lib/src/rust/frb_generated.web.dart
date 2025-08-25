@@ -556,52 +556,52 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
           .rust_arc_decrement_strong_count_RustOpaque_NonCloneDataTwinSyncSseMoi;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinMoiPtr =>
-          wire.rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinMoi;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinMoiPtr =>
+          wire.rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinMoi;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinNormalPtr => wire
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinNormal;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinNormalPtr => wire
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinNormal;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinRustAsyncPtr => wire
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsync;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinRustAsyncPtr => wire
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsync;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinRustAsyncMoiPtr => wire
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncMoi;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinRustAsyncMoiPtr => wire
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncMoi;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinRustAsyncSsePtr => wire
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSse;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinRustAsyncSsePtr => wire
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSse;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinRustAsyncSseMoiPtr =>
-          wire.rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSseMoi;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinRustAsyncSseMoiPtr =>
+          wire.rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSseMoi;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinSsePtr =>
-          wire.rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSse;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinSsePtr =>
+          wire.rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSse;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinSseMoiPtr => wire
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSseMoi;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinSseMoiPtr => wire
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSseMoi;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinSyncPtr => wire
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSync;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinSyncPtr => wire
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSync;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinSyncMoiPtr => wire
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncMoi;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinSyncMoiPtr => wire
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncMoi;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinSyncSsePtr => wire
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncSse;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinSyncSsePtr => wire
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncSse;
 
   CrossPlatformFinalizerArg
-      get rust_arc_decrement_strong_count_RwLockHideDataTwinSyncSseMoiPtr => wire
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncSseMoi;
+      get rust_arc_decrement_strong_count_MutexHideDataTwinSyncSseMoiPtr => wire
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncSseMoi;
 
   CrossPlatformFinalizerArg
       get rust_arc_decrement_strong_count_BoxAnyMyDartTypeRenamePtr => wire
@@ -3367,52 +3367,52 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
       dynamic raw);
 
   @protected
-  RwLockHideDataTwinMoi dco_decode_RustOpaque_RwLockHideDataTwinMoi(
+  MutexHideDataTwinMoi dco_decode_RustOpaque_MutexHideDataTwinMoi(
       dynamic raw);
 
   @protected
-  RwLockHideDataTwinNormal dco_decode_RustOpaque_RwLockHideDataTwinNormal(
+  MutexHideDataTwinNormal dco_decode_RustOpaque_MutexHideDataTwinNormal(
       dynamic raw);
 
   @protected
-  RwLockHideDataTwinRustAsync dco_decode_RustOpaque_RwLockHideDataTwinRustAsync(
+  MutexHideDataTwinRustAsync dco_decode_RustOpaque_MutexHideDataTwinRustAsync(
       dynamic raw);
 
   @protected
-  RwLockHideDataTwinRustAsyncMoi
-      dco_decode_RustOpaque_RwLockHideDataTwinRustAsyncMoi(dynamic raw);
+  MutexHideDataTwinRustAsyncMoi
+      dco_decode_RustOpaque_MutexHideDataTwinRustAsyncMoi(dynamic raw);
 
   @protected
-  RwLockHideDataTwinRustAsyncSse
-      dco_decode_RustOpaque_RwLockHideDataTwinRustAsyncSse(dynamic raw);
+  MutexHideDataTwinRustAsyncSse
+      dco_decode_RustOpaque_MutexHideDataTwinRustAsyncSse(dynamic raw);
 
   @protected
-  RwLockHideDataTwinRustAsyncSseMoi
-      dco_decode_RustOpaque_RwLockHideDataTwinRustAsyncSseMoi(dynamic raw);
+  MutexHideDataTwinRustAsyncSseMoi
+      dco_decode_RustOpaque_MutexHideDataTwinRustAsyncSseMoi(dynamic raw);
 
   @protected
-  RwLockHideDataTwinSse dco_decode_RustOpaque_RwLockHideDataTwinSse(
+  MutexHideDataTwinSse dco_decode_RustOpaque_MutexHideDataTwinSse(
       dynamic raw);
 
   @protected
-  RwLockHideDataTwinSseMoi dco_decode_RustOpaque_RwLockHideDataTwinSseMoi(
+  MutexHideDataTwinSseMoi dco_decode_RustOpaque_MutexHideDataTwinSseMoi(
       dynamic raw);
 
   @protected
-  RwLockHideDataTwinSync dco_decode_RustOpaque_RwLockHideDataTwinSync(
+  MutexHideDataTwinSync dco_decode_RustOpaque_MutexHideDataTwinSync(
       dynamic raw);
 
   @protected
-  RwLockHideDataTwinSyncMoi dco_decode_RustOpaque_RwLockHideDataTwinSyncMoi(
+  MutexHideDataTwinSyncMoi dco_decode_RustOpaque_MutexHideDataTwinSyncMoi(
       dynamic raw);
 
   @protected
-  RwLockHideDataTwinSyncSse dco_decode_RustOpaque_RwLockHideDataTwinSyncSse(
+  MutexHideDataTwinSyncSse dco_decode_RustOpaque_MutexHideDataTwinSyncSse(
       dynamic raw);
 
   @protected
-  RwLockHideDataTwinSyncSseMoi
-      dco_decode_RustOpaque_RwLockHideDataTwinSyncSseMoi(dynamic raw);
+  MutexHideDataTwinSyncSseMoi
+      dco_decode_RustOpaque_MutexHideDataTwinSyncSseMoi(dynamic raw);
 
   @protected
   BoxAnyMyDartTypeRename
@@ -12606,55 +12606,55 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
       SseDeserializer deserializer);
 
   @protected
-  RwLockHideDataTwinMoi sse_decode_RustOpaque_RwLockHideDataTwinMoi(
+  MutexHideDataTwinMoi sse_decode_RustOpaque_MutexHideDataTwinMoi(
       SseDeserializer deserializer);
 
   @protected
-  RwLockHideDataTwinNormal sse_decode_RustOpaque_RwLockHideDataTwinNormal(
+  MutexHideDataTwinNormal sse_decode_RustOpaque_MutexHideDataTwinNormal(
       SseDeserializer deserializer);
 
   @protected
-  RwLockHideDataTwinRustAsync sse_decode_RustOpaque_RwLockHideDataTwinRustAsync(
+  MutexHideDataTwinRustAsync sse_decode_RustOpaque_MutexHideDataTwinRustAsync(
       SseDeserializer deserializer);
 
   @protected
-  RwLockHideDataTwinRustAsyncMoi
-      sse_decode_RustOpaque_RwLockHideDataTwinRustAsyncMoi(
+  MutexHideDataTwinRustAsyncMoi
+      sse_decode_RustOpaque_MutexHideDataTwinRustAsyncMoi(
           SseDeserializer deserializer);
 
   @protected
-  RwLockHideDataTwinRustAsyncSse
-      sse_decode_RustOpaque_RwLockHideDataTwinRustAsyncSse(
+  MutexHideDataTwinRustAsyncSse
+      sse_decode_RustOpaque_MutexHideDataTwinRustAsyncSse(
           SseDeserializer deserializer);
 
   @protected
-  RwLockHideDataTwinRustAsyncSseMoi
-      sse_decode_RustOpaque_RwLockHideDataTwinRustAsyncSseMoi(
+  MutexHideDataTwinRustAsyncSseMoi
+      sse_decode_RustOpaque_MutexHideDataTwinRustAsyncSseMoi(
           SseDeserializer deserializer);
 
   @protected
-  RwLockHideDataTwinSse sse_decode_RustOpaque_RwLockHideDataTwinSse(
+  MutexHideDataTwinSse sse_decode_RustOpaque_MutexHideDataTwinSse(
       SseDeserializer deserializer);
 
   @protected
-  RwLockHideDataTwinSseMoi sse_decode_RustOpaque_RwLockHideDataTwinSseMoi(
+  MutexHideDataTwinSseMoi sse_decode_RustOpaque_MutexHideDataTwinSseMoi(
       SseDeserializer deserializer);
 
   @protected
-  RwLockHideDataTwinSync sse_decode_RustOpaque_RwLockHideDataTwinSync(
+  MutexHideDataTwinSync sse_decode_RustOpaque_MutexHideDataTwinSync(
       SseDeserializer deserializer);
 
   @protected
-  RwLockHideDataTwinSyncMoi sse_decode_RustOpaque_RwLockHideDataTwinSyncMoi(
+  MutexHideDataTwinSyncMoi sse_decode_RustOpaque_MutexHideDataTwinSyncMoi(
       SseDeserializer deserializer);
 
   @protected
-  RwLockHideDataTwinSyncSse sse_decode_RustOpaque_RwLockHideDataTwinSyncSse(
+  MutexHideDataTwinSyncSse sse_decode_RustOpaque_MutexHideDataTwinSyncSse(
       SseDeserializer deserializer);
 
   @protected
-  RwLockHideDataTwinSyncSseMoi
-      sse_decode_RustOpaque_RwLockHideDataTwinSyncSseMoi(
+  MutexHideDataTwinSyncSseMoi
+      sse_decode_RustOpaque_MutexHideDataTwinSyncSseMoi(
           SseDeserializer deserializer);
 
   @protected
@@ -24354,8 +24354,8 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
       return [3, cst_encode_RustOpaque_MutexHideDataTwinMoi(raw.field0)]
           .jsify()!;
     }
-    if (raw is EnumOpaqueTwinMoi_RwLock) {
-      return [4, cst_encode_RustOpaque_RwLockHideDataTwinMoi(raw.field0)]
+    if (raw is EnumOpaqueTwinMoi_Mutex) {
+      return [4, cst_encode_RustOpaque_MutexHideDataTwinMoi(raw.field0)]
           .jsify()!;
     }
     if (raw is EnumOpaqueTwinMoi_Nothing) {
@@ -24388,8 +24388,8 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
       return [3, cst_encode_RustOpaque_MutexHideDataTwinNormal(raw.field0)]
           .jsify()!;
     }
-    if (raw is EnumOpaqueTwinNormal_RwLock) {
-      return [4, cst_encode_RustOpaque_RwLockHideDataTwinNormal(raw.field0)]
+    if (raw is EnumOpaqueTwinNormal_Mutex) {
+      return [4, cst_encode_RustOpaque_MutexHideDataTwinNormal(raw.field0)]
           .jsify()!;
     }
     if (raw is EnumOpaqueTwinNormal_Nothing) {
@@ -24424,8 +24424,8 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
       return [3, cst_encode_RustOpaque_MutexHideDataTwinRustAsync(raw.field0)]
           .jsify()!;
     }
-    if (raw is EnumOpaqueTwinRustAsync_RwLock) {
-      return [4, cst_encode_RustOpaque_RwLockHideDataTwinRustAsync(raw.field0)]
+    if (raw is EnumOpaqueTwinRustAsync_Mutex) {
+      return [4, cst_encode_RustOpaque_MutexHideDataTwinRustAsync(raw.field0)]
           .jsify()!;
     }
     if (raw is EnumOpaqueTwinRustAsync_Nothing) {
@@ -24465,10 +24465,10 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
         cst_encode_RustOpaque_MutexHideDataTwinRustAsyncMoi(raw.field0)
       ].jsify()!;
     }
-    if (raw is EnumOpaqueTwinRustAsyncMoi_RwLock) {
+    if (raw is EnumOpaqueTwinRustAsyncMoi_Mutex) {
       return [
         4,
-        cst_encode_RustOpaque_RwLockHideDataTwinRustAsyncMoi(raw.field0)
+        cst_encode_RustOpaque_MutexHideDataTwinRustAsyncMoi(raw.field0)
       ].jsify()!;
     }
     if (raw is EnumOpaqueTwinRustAsyncMoi_Nothing) {
@@ -24502,8 +24502,8 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
       return [3, cst_encode_RustOpaque_MutexHideDataTwinSync(raw.field0)]
           .jsify()!;
     }
-    if (raw is EnumOpaqueTwinSync_RwLock) {
-      return [4, cst_encode_RustOpaque_RwLockHideDataTwinSync(raw.field0)]
+    if (raw is EnumOpaqueTwinSync_Mutex) {
+      return [4, cst_encode_RustOpaque_MutexHideDataTwinSync(raw.field0)]
           .jsify()!;
     }
     if (raw is EnumOpaqueTwinSync_Nothing) {
@@ -24537,8 +24537,8 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
       return [3, cst_encode_RustOpaque_MutexHideDataTwinSyncMoi(raw.field0)]
           .jsify()!;
     }
-    if (raw is EnumOpaqueTwinSyncMoi_RwLock) {
-      return [4, cst_encode_RustOpaque_RwLockHideDataTwinSyncMoi(raw.field0)]
+    if (raw is EnumOpaqueTwinSyncMoi_Mutex) {
+      return [4, cst_encode_RustOpaque_MutexHideDataTwinSyncMoi(raw.field0)]
           .jsify()!;
     }
     if (raw is EnumOpaqueTwinSyncMoi_Nothing) {
@@ -29658,26 +29658,26 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
       NonCloneDataTwinSyncMoi raw);
 
   @protected
-  int cst_encode_RustOpaque_RwLockHideDataTwinMoi(RwLockHideDataTwinMoi raw);
+  int cst_encode_RustOpaque_MutexHideDataTwinMoi(MutexHideDataTwinMoi raw);
 
   @protected
-  int cst_encode_RustOpaque_RwLockHideDataTwinNormal(
-      RwLockHideDataTwinNormal raw);
+  int cst_encode_RustOpaque_MutexHideDataTwinNormal(
+      MutexHideDataTwinNormal raw);
 
   @protected
-  int cst_encode_RustOpaque_RwLockHideDataTwinRustAsync(
-      RwLockHideDataTwinRustAsync raw);
+  int cst_encode_RustOpaque_MutexHideDataTwinRustAsync(
+      MutexHideDataTwinRustAsync raw);
 
   @protected
-  int cst_encode_RustOpaque_RwLockHideDataTwinRustAsyncMoi(
-      RwLockHideDataTwinRustAsyncMoi raw);
+  int cst_encode_RustOpaque_MutexHideDataTwinRustAsyncMoi(
+      MutexHideDataTwinRustAsyncMoi raw);
 
   @protected
-  int cst_encode_RustOpaque_RwLockHideDataTwinSync(RwLockHideDataTwinSync raw);
+  int cst_encode_RustOpaque_MutexHideDataTwinSync(MutexHideDataTwinSync raw);
 
   @protected
-  int cst_encode_RustOpaque_RwLockHideDataTwinSyncMoi(
-      RwLockHideDataTwinSyncMoi raw);
+  int cst_encode_RustOpaque_MutexHideDataTwinSyncMoi(
+      MutexHideDataTwinSyncMoi raw);
 
   @protected
   int cst_encode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBoxdynAnySendSyncstatic(
@@ -32408,52 +32408,52 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
       NonCloneDataTwinSyncSseMoi self, SseSerializer serializer);
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinMoi(
-      RwLockHideDataTwinMoi self, SseSerializer serializer);
+  void sse_encode_RustOpaque_MutexHideDataTwinMoi(
+      MutexHideDataTwinMoi self, SseSerializer serializer);
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinNormal(
-      RwLockHideDataTwinNormal self, SseSerializer serializer);
+  void sse_encode_RustOpaque_MutexHideDataTwinNormal(
+      MutexHideDataTwinNormal self, SseSerializer serializer);
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinRustAsync(
-      RwLockHideDataTwinRustAsync self, SseSerializer serializer);
+  void sse_encode_RustOpaque_MutexHideDataTwinRustAsync(
+      MutexHideDataTwinRustAsync self, SseSerializer serializer);
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinRustAsyncMoi(
-      RwLockHideDataTwinRustAsyncMoi self, SseSerializer serializer);
+  void sse_encode_RustOpaque_MutexHideDataTwinRustAsyncMoi(
+      MutexHideDataTwinRustAsyncMoi self, SseSerializer serializer);
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinRustAsyncSse(
-      RwLockHideDataTwinRustAsyncSse self, SseSerializer serializer);
+  void sse_encode_RustOpaque_MutexHideDataTwinRustAsyncSse(
+      MutexHideDataTwinRustAsyncSse self, SseSerializer serializer);
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinRustAsyncSseMoi(
-      RwLockHideDataTwinRustAsyncSseMoi self, SseSerializer serializer);
+  void sse_encode_RustOpaque_MutexHideDataTwinRustAsyncSseMoi(
+      MutexHideDataTwinRustAsyncSseMoi self, SseSerializer serializer);
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinSse(
-      RwLockHideDataTwinSse self, SseSerializer serializer);
+  void sse_encode_RustOpaque_MutexHideDataTwinSse(
+      MutexHideDataTwinSse self, SseSerializer serializer);
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinSseMoi(
-      RwLockHideDataTwinSseMoi self, SseSerializer serializer);
+  void sse_encode_RustOpaque_MutexHideDataTwinSseMoi(
+      MutexHideDataTwinSseMoi self, SseSerializer serializer);
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinSync(
-      RwLockHideDataTwinSync self, SseSerializer serializer);
+  void sse_encode_RustOpaque_MutexHideDataTwinSync(
+      MutexHideDataTwinSync self, SseSerializer serializer);
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinSyncMoi(
-      RwLockHideDataTwinSyncMoi self, SseSerializer serializer);
+  void sse_encode_RustOpaque_MutexHideDataTwinSyncMoi(
+      MutexHideDataTwinSyncMoi self, SseSerializer serializer);
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinSyncSse(
-      RwLockHideDataTwinSyncSse self, SseSerializer serializer);
+  void sse_encode_RustOpaque_MutexHideDataTwinSyncSse(
+      MutexHideDataTwinSyncSse self, SseSerializer serializer);
 
   @protected
-  void sse_encode_RustOpaque_RwLockHideDataTwinSyncSseMoi(
-      RwLockHideDataTwinSyncSseMoi self, SseSerializer serializer);
+  void sse_encode_RustOpaque_MutexHideDataTwinSyncSseMoi(
+      MutexHideDataTwinSyncSseMoi self, SseSerializer serializer);
 
   @protected
   void
@@ -61647,148 +61647,148 @@ class RustLibWire implements BaseWire {
           .rust_arc_decrement_strong_count_RustOpaque_NonCloneDataTwinSyncSseMoi(
               ptr);
 
-  void rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinMoi(
+  void rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinMoi(
           int ptr) =>
       wasmModule
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinMoi(
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinMoi(
               ptr);
 
-  void rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinMoi(
+  void rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinMoi(
           int ptr) =>
       wasmModule
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinMoi(
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinMoi(
               ptr);
 
-  void rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinNormal(
+  void rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinNormal(
           int ptr) =>
       wasmModule
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinNormal(
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinNormal(
               ptr);
 
-  void rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinNormal(
+  void rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinNormal(
           int ptr) =>
       wasmModule
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinNormal(
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinNormal(
               ptr);
 
-  void rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsync(
+  void rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsync(
           int ptr) =>
       wasmModule
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsync(
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsync(
               ptr);
 
-  void rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsync(
+  void rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsync(
           int ptr) =>
       wasmModule
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsync(
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsync(
               ptr);
 
-  void rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncMoi(
+  void rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncMoi(
           int ptr) =>
       wasmModule
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncMoi(
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncMoi(
               ptr);
 
-  void rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncMoi(
+  void rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncMoi(
           int ptr) =>
       wasmModule
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncMoi(
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncMoi(
               ptr);
 
-  void rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSse(
+  void rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSse(
           int ptr) =>
       wasmModule
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSse(
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSse(
               ptr);
 
-  void rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSse(
+  void rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSse(
           int ptr) =>
       wasmModule
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSse(
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSse(
               ptr);
 
-  void rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSseMoi(
+  void rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSseMoi(
           int ptr) =>
       wasmModule
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSseMoi(
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSseMoi(
               ptr);
 
-  void rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSseMoi(
+  void rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSseMoi(
           int ptr) =>
       wasmModule
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSseMoi(
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSseMoi(
               ptr);
 
-  void rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSse(
+  void rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSse(
           int ptr) =>
       wasmModule
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSse(
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSse(
               ptr);
 
-  void rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSse(
+  void rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSse(
           int ptr) =>
       wasmModule
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSse(
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSse(
               ptr);
 
-  void rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSseMoi(
+  void rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSseMoi(
           int ptr) =>
       wasmModule
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSseMoi(
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSseMoi(
               ptr);
 
-  void rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSseMoi(
+  void rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSseMoi(
           int ptr) =>
       wasmModule
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSseMoi(
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSseMoi(
               ptr);
 
-  void rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSync(
+  void rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSync(
           int ptr) =>
       wasmModule
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSync(
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSync(
               ptr);
 
-  void rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSync(
+  void rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSync(
           int ptr) =>
       wasmModule
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSync(
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSync(
               ptr);
 
-  void rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncMoi(
+  void rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncMoi(
           int ptr) =>
       wasmModule
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncMoi(
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncMoi(
               ptr);
 
-  void rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncMoi(
+  void rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncMoi(
           int ptr) =>
       wasmModule
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncMoi(
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncMoi(
               ptr);
 
-  void rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncSse(
+  void rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncSse(
           int ptr) =>
       wasmModule
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncSse(
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncSse(
               ptr);
 
-  void rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncSse(
+  void rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncSse(
           int ptr) =>
       wasmModule
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncSse(
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncSse(
               ptr);
 
-  void rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncSseMoi(
+  void rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncSseMoi(
           int ptr) =>
       wasmModule
-          .rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncSseMoi(
+          .rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncSseMoi(
               ptr);
 
-  void rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncSseMoi(
+  void rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncSseMoi(
           int ptr) =>
       wasmModule
-          .rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncSseMoi(
+          .rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncSseMoi(
               ptr);
 
   void rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBoxdynAnySendSyncstatic(
@@ -78644,95 +78644,95 @@ extension type RustLibWasmModule._(JSObject _) implements JSObject {
           int ptr);
 
   external void
-      rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinMoi(int ptr);
+      rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinMoi(int ptr);
 
   external void
-      rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinMoi(int ptr);
+      rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinMoi(int ptr);
 
   external void
-      rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinNormal(
+      rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinNormal(
           int ptr);
 
   external void
-      rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinNormal(
+      rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinNormal(
           int ptr);
 
   external void
-      rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsync(
+      rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsync(
           int ptr);
 
   external void
-      rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsync(
+      rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsync(
           int ptr);
 
   external void
-      rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncMoi(
+      rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncMoi(
           int ptr);
 
   external void
-      rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncMoi(
+      rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncMoi(
           int ptr);
 
   external void
-      rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSse(
+      rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSse(
           int ptr);
 
   external void
-      rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSse(
+      rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSse(
           int ptr);
 
   external void
-      rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSseMoi(
+      rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSseMoi(
           int ptr);
 
   external void
-      rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinRustAsyncSseMoi(
+      rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinRustAsyncSseMoi(
           int ptr);
 
   external void
-      rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSse(int ptr);
+      rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSse(int ptr);
 
   external void
-      rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSse(int ptr);
+      rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSse(int ptr);
 
   external void
-      rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSseMoi(
+      rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSseMoi(
           int ptr);
 
   external void
-      rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSseMoi(
+      rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSseMoi(
           int ptr);
 
   external void
-      rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSync(
+      rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSync(
           int ptr);
 
   external void
-      rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSync(
+      rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSync(
           int ptr);
 
   external void
-      rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncMoi(
+      rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncMoi(
           int ptr);
 
   external void
-      rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncMoi(
+      rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncMoi(
           int ptr);
 
   external void
-      rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncSse(
+      rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncSse(
           int ptr);
 
   external void
-      rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncSse(
+      rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncSse(
           int ptr);
 
   external void
-      rust_arc_increment_strong_count_RustOpaque_RwLockHideDataTwinSyncSseMoi(
+      rust_arc_increment_strong_count_RustOpaque_MutexHideDataTwinSyncSseMoi(
           int ptr);
 
   external void
-      rust_arc_decrement_strong_count_RustOpaque_RwLockHideDataTwinSyncSseMoi(
+      rust_arc_decrement_strong_count_RustOpaque_MutexHideDataTwinSyncSseMoi(
           int ptr);
 
   external void
