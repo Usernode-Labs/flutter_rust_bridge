@@ -24,6 +24,16 @@ pub fn rust_auto_opaque_encode<T, A: BaseArc<RustAutoOpaqueInner<T>>>(
     RustOpaqueBase::new(RustAutoOpaqueInner::new(Mutex::new(value)))
 }
 
+pub fn rust_auto_opaque_decode_owned_no_mutex<T, A: BaseArc<T>>(opaque: RustOpaqueBase<T, A>) -> T {
+    opaque.into_inner().expect(
+        "Cannot convert RustOpaque to inner value. This is probably because you are having more than one references to it.",
+    )
+}
+
+pub fn rust_auto_opaque_encode_no_mutex<T, A: BaseArc<T>>(value: T) -> RustOpaqueBase<T, A> {
+    RustOpaqueBase::new(value)
+}
+
 pub fn rust_auto_opaque_lockable_order<T: Send + Sync, A: BaseArc<RustAutoOpaqueInner<T>>>(
     opaque: &RustAutoOpaqueBase<T, A>,
 ) -> LockableOrder {

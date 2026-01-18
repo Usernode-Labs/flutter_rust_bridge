@@ -13,6 +13,7 @@ pub struct MirTypeRustAutoOpaqueImplicit {
     pub raw: MirRustAutoOpaqueRaw,
     pub reason: Option<MirTypeRustAutoOpaqueImplicitReason>,
     pub ignore: bool,
+    pub use_mutex: bool,
 }
 
 /// Original type without any transformation

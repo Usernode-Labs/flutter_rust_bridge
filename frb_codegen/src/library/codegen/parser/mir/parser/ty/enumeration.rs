@@ -219,6 +219,26 @@ impl EnumOrStructParser<MirEnumIdent, MirEnum, ItemEnum>
             .parse_type_rust_auto_opaque_implicit(namespace, ty, reason, override_ignore)
     }
 
+    fn parse_type_rust_auto_opaque_implicit_with_context<F>(
+        &mut self,
+        namespace: Option<Namespace>,
+        ty: &Type,
+        reason: Option<MirTypeRustAutoOpaqueImplicitReason>,
+        override_ignore: Option<bool>,
+        context_modifier: F,
+    ) -> anyhow::Result<MirType>
+    where
+        F: FnOnce(&TypeParserParsingContext) -> TypeParserParsingContext,
+    {
+        self.0.parse_type_rust_auto_opaque_implicit_with_context(
+            namespace,
+            ty,
+            reason,
+            override_ignore,
+            context_modifier,
+        )
+    }
+
     fn context(&self) -> &TypeParserParsingContext {
         self.0.context
     }

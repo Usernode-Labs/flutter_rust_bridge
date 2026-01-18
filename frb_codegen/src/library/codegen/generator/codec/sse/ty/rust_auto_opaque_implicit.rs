@@ -6,7 +6,6 @@ use crate::codegen::generator::codec::sse::ty::rust_opaque::{
 };
 use crate::codegen::generator::codec::sse::ty::*;
 use crate::codegen::ir::mir::func::OwnershipMode;
-use convert_case::{Case, Casing};
 
 impl CodecSseTyTrait for RustAutoOpaqueImplicitCodecSseTy<'_> {
     fn generate_encode(&self, lang: &Lang) -> Option<String> {
@@ -62,17 +61,22 @@ pub(crate) fn generate_encode_rust_auto_opaque(
     variable: &str,
 ) -> String {
     let arc = mir.inner.codec.arc_ty();
-    format!(
-        "flutter_rust_bridge::for_generated::rust_auto_opaque_encode::<_, {arc}<_>>({variable})"
-    )
+    let func_name = if mir.use_mutex {
+        "rust_auto_opaque_encode"
+    } else {
+        "rust_auto_opaque_encode_no_mutex"
+    };
+    format!("flutter_rust_bridge::for_generated::{func_name}::<_, {arc}<_>>({variable})")
 }
 
 pub(crate) fn generate_decode_rust_auto_opaque(
     mir: &MirTypeRustAutoOpaqueImplicit,
     variable: &str,
 ) -> String {
-    format!(
-        "flutter_rust_bridge::for_generated::rust_auto_opaque_decode_{}({variable})",
-        mir.ownership_mode.to_string().to_case(Case::Snake)
-    )
+    let func_name = if mir.use_mutex {
+        "rust_auto_opaque_decode_owned"
+    } else {
+        "rust_auto_opaque_decode_owned_no_mutex"
+    };
+    format!("flutter_rust_bridge::for_generated::{func_name}({variable})")
 }

@@ -44,11 +44,12 @@ impl TypeParserWithContext<'_, '_, '_> {
         codec: Option<RustOpaqueCodecMode>,
         dart_api_type: Option<String>,
     ) -> anyhow::Result<MirTypeDelegateRustAutoOpaqueExplicit> {
-        let (ans_raw, ans_inner) = self.parse_type_rust_auto_opaque_common(
+        let (ans_raw, ans_inner, _use_mutex) = self.parse_type_rust_auto_opaque_common(
             inner.clone(),
             namespace,
             codec,
             dart_api_type,
+            None,
         )?;
         Ok(MirTypeDelegateRustAutoOpaqueExplicit {
             raw: ans_raw,

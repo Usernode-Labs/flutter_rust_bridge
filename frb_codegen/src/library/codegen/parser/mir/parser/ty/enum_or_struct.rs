@@ -128,7 +128,8 @@ where
         path: &syn::Path,
         src_object: &HirFlatStructOrEnum<Item>,
     ) -> anyhow::Result<MirType> {
-        self.parse_type_rust_auto_opaque_implicit(
+        let attrs = FrbAttributes::parse(src_object.src.attrs())?;
+        self.parse_type_rust_auto_opaque_implicit_with_context(
             Some(namespaced_name.namespace.clone()),
             &Type::Path(TypePath {
                 path: path.to_owned(),
@@ -140,6 +141,7 @@ where
                 &namespaced_name.namespace.crate_name(),
                 self.context(),
             )),
+            |c| c.with_struct_or_enum_attributes(attrs.clone()),
         )
     }
 
@@ -165,6 +167,17 @@ where
         reason: Option<MirTypeRustAutoOpaqueImplicitReason>,
         override_ignore: Option<bool>,
     ) -> anyhow::Result<MirType>;
+
+    fn parse_type_rust_auto_opaque_implicit_with_context<F>(
+        &mut self,
+        namespace: Option<Namespace>,
+        ty: &Type,
+        reason: Option<MirTypeRustAutoOpaqueImplicitReason>,
+        override_ignore: Option<bool>,
+        context_modifier: F,
+    ) -> anyhow::Result<MirType>
+    where
+        F: FnOnce(&TypeParserParsingContext) -> TypeParserParsingContext;
 
     fn context(&self) -> &TypeParserParsingContext;
 

@@ -54,7 +54,8 @@ pub use crate::rust_async::{BaseAsyncRuntime, SimpleAsyncRuntime};
 pub use crate::rust_auto_opaque::dart2rust_explicit::rust_auto_opaque_explicit_decode;
 #[cfg(feature = "rust-async")]
 pub use crate::rust_auto_opaque::dart2rust_implicit::{
-    rust_auto_opaque_decode_owned, rust_auto_opaque_encode, rust_auto_opaque_lockable_order,
+    rust_auto_opaque_decode_owned, rust_auto_opaque_decode_owned_no_mutex, rust_auto_opaque_encode,
+    rust_auto_opaque_encode_no_mutex, rust_auto_opaque_lockable_order,
 };
 #[cfg(feature = "rust-async")]
 pub use crate::rust_auto_opaque::rust2dart_explicit::rust_auto_opaque_explicit_encode;

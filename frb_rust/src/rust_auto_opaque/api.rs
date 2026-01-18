@@ -1,5 +1,5 @@
 use crate::generalized_arc::base_arc::BaseArc;
-use crate::rust_async::{MutexGuard};
+use crate::rust_async::MutexGuard;
 use crate::rust_auto_opaque::inner::RustAutoOpaqueInner;
 use crate::rust_auto_opaque::RustAutoOpaqueBase;
 use crate::rust_opaque::RustOpaqueBase;

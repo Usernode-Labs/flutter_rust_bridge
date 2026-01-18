@@ -159,6 +159,14 @@ impl FrbAttributes {
         }
     }
 
+    pub(crate) fn rust_auto_opaque_use_mutex(&self) -> Option<bool> {
+        if self.any_eq(&FrbAttribute::OpaqueNoMutex) {
+            Some(false)
+        } else {
+            None
+        }
+    }
+
     pub(crate) fn codec_mode_pack(&self) -> Option<CodecModePack> {
         if self.any_eq(&FrbAttribute::Serialize) {
             Some(CodecModePack {
@@ -295,6 +303,7 @@ mod frb_keyword {
     syn::custom_keyword!(type_64bit_int);
     syn::custom_keyword!(generate_implementor_enum);
     syn::custom_keyword!(rust_opaque_codec_moi);
+    syn::custom_keyword!(opaque_no_mutex);
     syn::custom_keyword!(serialize);
     syn::custom_keyword!(semi_serialize);
     syn::custom_keyword!(dart_metadata);
@@ -359,6 +368,7 @@ enum FrbAttribute {
     DartMetadata(NamedOption<frb_keyword::dart_metadata, FrbAttributeDartMetadata>),
     Noop,
     RustOpaqueCodecMoi,
+    OpaqueNoMutex,
     // NOTE: Undocumented, since this name may be suboptimal and is subject to change
     SemiSerialize,
     UiState,
@@ -421,6 +431,14 @@ impl Parse for FrbAttribute {
                     &lookahead,
                     rust_opaque_codec_moi,
                     RustOpaqueCodecMoi,
+                )
+            })
+            .or_else(|| {
+                parse_keyword::<opaque_no_mutex, _>(
+                    input,
+                    &lookahead,
+                    opaque_no_mutex,
+                    OpaqueNoMutex,
                 )
             })
             .or_else(|| parse_keyword::<serialize, _>(input, &lookahead, serialize, Serialize))
@@ -900,6 +918,11 @@ mod tests {
     #[test]
     fn test_rust_opaque_codec_moi() {
         simple_keyword_tester("rust_opaque_codec_moi", FrbAttribute::RustOpaqueCodecMoi);
+    }
+
+    #[test]
+    fn test_opaque_no_mutex() {
+        simple_keyword_tester("opaque_no_mutex", FrbAttribute::OpaqueNoMutex);
     }
 
     #[test]

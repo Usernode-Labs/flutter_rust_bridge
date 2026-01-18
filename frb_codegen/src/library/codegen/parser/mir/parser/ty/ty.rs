@@ -1,6 +1,8 @@
+use crate::codegen::ir::mir::ty::rust_auto_opaque_implicit::MirTypeRustAutoOpaqueImplicitReason;
 use crate::codegen::ir::mir::ty::MirType;
 use crate::codegen::parser::mir::parser::ty::misc::convert_ident_str;
 use crate::codegen::parser::mir::parser::ty::{TypeParserParsingContext, TypeParserWithContext};
+use crate::utils::namespace::Namespace;
 use crate::utils::syn_utils::ty_to_string;
 use anyhow::Context;
 use syn::Type;
@@ -27,6 +29,27 @@ impl TypeParserWithContext<'_, '_, '_> {
             context: &new_context,
         };
         self_with_context.parse_type(ty)
+    }
+
+    pub(crate) fn parse_type_rust_auto_opaque_implicit_with_context(
+        &mut self,
+        namespace: Option<Namespace>,
+        ty: &Type,
+        reason: Option<MirTypeRustAutoOpaqueImplicitReason>,
+        override_ignore: Option<bool>,
+        context_modifier: impl FnOnce(&TypeParserParsingContext) -> TypeParserParsingContext,
+    ) -> anyhow::Result<MirType> {
+        let new_context = context_modifier(self.context);
+        let mut self_with_context = TypeParserWithContext {
+            inner: self.inner,
+            context: &new_context,
+        };
+        self_with_context.parse_type_rust_auto_opaque_implicit(
+            namespace,
+            ty,
+            reason,
+            override_ignore,
+        )
     }
 
     fn parse_type_inner(&mut self, ty: &Type) -> anyhow::Result<MirType> {

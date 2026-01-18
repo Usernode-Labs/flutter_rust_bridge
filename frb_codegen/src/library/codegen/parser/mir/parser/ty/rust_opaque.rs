@@ -7,7 +7,9 @@ use crate::codegen::ir::mir::ty::MirType::RustOpaque;
 use crate::codegen::parser::mir::parser::ty::unencodable::SplayedSegment;
 use crate::codegen::parser::mir::parser::ty::TypeParserWithContext;
 use crate::utils::namespace::Namespace;
+use log::warn;
 use quote::ToTokens;
+use std::collections::hash_map::Entry;
 use std::collections::HashMap;
 use std::fmt::Debug;
 use syn::Type;
@@ -61,11 +63,16 @@ pub(super) type RustOpaqueParserInfo = GeneralizedRustOpaqueParserInfo;
 pub(super) struct RustOpaqueParserTypeInfo {
     pub namespace: Namespace,
     pub codec: RustOpaqueCodecMode,
+    pub auto_opaque_use_mutex: Option<bool>,
 }
 
 impl RustOpaqueParserTypeInfo {
     pub fn new(namespace: Namespace, codec: RustOpaqueCodecMode) -> Self {
-        Self { namespace, codec }
+        Self {
+            namespace,
+            codec,
+            auto_opaque_use_mutex: None,
+        }
     }
 }
 
@@ -78,6 +85,25 @@ impl GeneralizedRustOpaqueParserInfo {
         type_safe_ident: String,
         insert_value: RustOpaqueParserTypeInfo,
     ) -> RustOpaqueParserTypeInfo {
-        (self.0.entry(type_safe_ident).or_insert(insert_value)).clone()
+        match self.0.entry(type_safe_ident) {
+            Entry::Vacant(entry) => entry.insert(insert_value).clone(),
+            Entry::Occupied(mut entry) => {
+                if let Some(new_use_mutex) = insert_value.auto_opaque_use_mutex {
+                    match entry.get().auto_opaque_use_mutex {
+                        Some(existing) if existing != new_use_mutex => {
+                            warn!(
+                                "Conflicting rust_auto_opaque_no_mutex settings for type {}; using {existing}",
+                                entry.key()
+                            );
+                        }
+                        None => {
+                            entry.get_mut().auto_opaque_use_mutex = Some(new_use_mutex);
+                        }
+                        _ => {}
+                    }
+                }
+                entry.get().clone()
+            }
+        }
     }
 }
